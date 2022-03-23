@@ -1,0 +1,175 @@
+import 'dart:io';
+import 'dart:typed_data';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/material.dart';
+import 'package:trashtogether/Screens/LoginScreen.dart';
+import 'package:trashtogether/Screens/MainScreen.dart';
+import 'package:trashtogether/utils/colors.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:trashtogether/widgets/TextInputField.dart';
+
+class SignupScreen extends StatefulWidget {
+  const SignupScreen({Key? key}) : super(key: key);
+
+  @override
+  State<SignupScreen> createState() => _SignupScreenState();
+}
+
+class _SignupScreenState extends State<SignupScreen> {
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _bioController = TextEditingController();
+  final TextEditingController _usernameController = TextEditingController();
+  final ImagePicker _picker = ImagePicker();
+  bool isloading = false;
+  XFile? image;
+  @override
+  void dispose() {
+    super.dispose();
+    _emailController.dispose();
+    _passwordController.dispose();
+    _usernameController.dispose();
+    _bioController.dispose();
+  }
+
+  void selectImage() async {
+    XFile? im = await _picker.pickImage(source: ImageSource.gallery);
+    setState(() => image = im);
+  }
+
+  void signUpUser() async {
+    setState(() {
+      isloading = true;
+    });
+    Navigator.of(context)
+        .pushReplacement(MaterialPageRoute(builder: (context) => MainScreen()));
+    Navigator.of(context).pop();
+    setState(() {
+      isloading = false;
+    });
+  }
+
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+          child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 32),
+        width: double.infinity,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Flexible(
+              child: Container(),
+              flex: 1,
+            ),
+            Text(
+              'Trash Together',
+              style: GoogleFonts.shizuru(
+                fontSize: 40,
+              ),
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            Stack(
+              children: [
+                image != null
+                    ? CircleAvatar(
+                        radius: 64,
+                        backgroundImage:
+                            Image.file(File(image!.path)) as ImageProvider,
+                      )
+                    : const CircleAvatar(
+                        radius: 64,
+                        backgroundImage: NetworkImage(
+                            'https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'),
+                      ),
+                Positioned(
+                    bottom: -10,
+                    left: 80,
+                    child: IconButton(
+                        onPressed: () => selectImage(),
+                        icon: const Icon(Icons.add_a_photo)))
+              ],
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            TextInputField(
+                hintText: 'Username',
+                controller: _usernameController,
+                inputType: TextInputType.text),
+            const SizedBox(
+              height: 20,
+            ),
+            TextInputField(
+                hintText: 'Email',
+                controller: _emailController,
+                inputType: TextInputType.emailAddress),
+            const SizedBox(
+              height: 20,
+            ),
+            TextInputField(
+              hintText: 'Password',
+              controller: _passwordController,
+              inputType: TextInputType.text,
+              isPassword: true,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              onTap: () => signUpUser(),
+              child: Material(
+                child: Container(
+                  child: isloading
+                      ? const Center(
+                          child: CircularProgressIndicator(
+                          color: Colors.white,
+                        ))
+                      : const Text('Sign Up'),
+                  width: double.infinity,
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  decoration: const ShapeDecoration(
+                    color: blueColor,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Flexible(
+              child: Container(),
+              flex: 2,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  child: const Text('Already have an account?'),
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                ),
+                GestureDetector(
+                  onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => LoginScreen())),
+                  child: Container(
+                    child: const Text(
+                      'Log in',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
+      )),
+    );
+  }
+}
