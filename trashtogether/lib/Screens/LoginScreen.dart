@@ -12,9 +12,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final TextEditingController _emailController = new TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
   bool isLoading = false;
-  final TextEditingController _passwordController = new TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   @override
   void dispose() {
@@ -54,7 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             GestureDetector(
               onTap: () => Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) => MainScreen())),
+                  MaterialPageRoute(builder: (context) => const MainScreen())),
               child: Container(
                 child: isLoading
                     ? const Center(
