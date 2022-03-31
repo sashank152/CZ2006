@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "219670549639",
+    "project_id": "trashtogether-3ecd9",
+    "storage_bucket": "trashtogether-3ecd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219670549639:android:77e1405f1e94d646711422",
+        "android_client_info": {
+          "package_name": "com.example.trashtogether"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219670549639-b68j6otvuvvtqa1kknorcjec49kpu8gd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNeeyM8u6yPt9bnPK5Zl1yMPk3Covw7Y0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219670549639-b68j6otvuvvtqa1kknorcjec49kpu8gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
