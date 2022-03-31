@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 15,
             ),
             TextInputField(
-              controller: _emailController,
+              controller: _passwordController,
               hintText: "Password",
               inputType: TextInputType.text,
               isPassword: true,
@@ -70,6 +70,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
               ),
+            ),
+            GestureDetector(
+              onTap: () {},
+              child: Text("Forgot Password?"),
             ),
             Flexible(
               child: Container(),

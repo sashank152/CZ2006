@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:trashtogether/utils/data.dart';
 import 'package:trashtogether/widgets/TextInputField.dart';
@@ -18,6 +19,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   TextEditingController hdpeBottleController = TextEditingController();
   TextEditingController glassController = TextEditingController();
   TextEditingController clothingController = TextEditingController();
+  List<TextEditingController> controllerList = [];
   double sum = 0;
 
   @override
@@ -28,19 +30,42 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     otherPaperController.dispose();
   }
 
+  @override
+  void initState() {
+    super.initState();
+    controllerList = [
+      newspaperController,
+      cartonController,
+      otherPaperController,
+      aluminiumCanController,
+      foodTinController,
+      hdpeBottleController,
+      glassController,
+      clothingController
+    ];
+  }
+
   void calculate() {
     setState(() {
-      sum = (double.parse(newspaperController.text)) *
-              rates["newspaper"]!.toDouble() +
-          (double.parse(cartonController.text)) * rates["carton"]!.toDouble() +
-          (double.parse(otherPaperController.text)) *
-              rates["other papers"]!.toDouble() +
-          (double.parse(aluminiumCanController.text)) *
-              rates["aluminium cans"]!.toDouble() +
-          (double.parse(foodTinController.text)) *
-              rates["food tins"]!.toDouble() +
-          (double.parse(clothingController.text)) *
-              rates["reusable clothing"]!.toDouble();
+      sum = 0;
+    });
+    var prices = <double>[];
+    for (int i = 0; i < controllerList.length; i++) {
+      TextEditingController tec = controllerList[i];
+      if (tec.text.isNotEmpty) {
+        try {
+          prices.add(double.parse(tec.text) * rates[i]);
+        } catch (e) {
+          ScaffoldMessenger.of(context)
+              .showSnackBar(SnackBar(content: Text(e.toString())));
+          print(e);
+        }
+      }
+    }
+    setState(() {
+      for (double price in prices) {
+        sum = sum + price;
+      }
     });
   }
 
@@ -50,22 +75,38 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       child: Container(
         child: Column(
           children: [
-            Text("Calculate your cash from your trash"),
+            Text("Calculate your cash from your trash",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: Colors.blue.shade200)),
+            SizedBox(
+              height: 60,
+            ),
             Text("Newspaper"),
             TextInputField(
                 hintText: "Weight in Kgs",
                 controller: newspaperController,
                 inputType: TextInputType.number),
+            SizedBox(
+              height: 30,
+            ),
             Text("Cartons"),
             TextInputField(
                 hintText: "Weight in kgs",
                 controller: cartonController,
                 inputType: TextInputType.number),
+            SizedBox(
+              height: 30,
+            ),
             Text("Other Papers"),
             TextInputField(
                 hintText: "Weight in kgs",
                 controller: otherPaperController,
                 inputType: TextInputType.number),
+            SizedBox(
+              height: 30,
+            ),
             Text("Aluminium cans"),
             TextInputField(
                 hintText: "Weight in kgs",
