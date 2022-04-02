@@ -26,16 +26,18 @@ class _LoginScreenState extends State<LoginScreen> {
     _emailController.dispose();
     _passwordController.dispose();
   }
-void loginUser() async {
+
+  void loginUser() async {
     String res = await AuthMethods().loginUser(
         email: _emailController.text, password: _passwordController.text);
-    print(res);
     if (res != "Success") {
       showSnackBar(res, context);
     } else {
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => const MainScreen()));
     }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -91,9 +93,7 @@ void loginUser() async {
                   height: MediaQuery.of(context).size.height * .02,
                 ),
                 GestureDetector(
-                  onTap: () => Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(
-                          builder: (context) => const MainScreen())),
+                  onTap: loginUser,
                   child: Container(
                     child: isLoading
                         ? const Center(
