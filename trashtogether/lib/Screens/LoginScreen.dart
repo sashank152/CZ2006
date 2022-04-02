@@ -5,6 +5,8 @@ import 'package:trashtogether/Screens/MainScreen.dart';
 import 'package:trashtogether/Screens/SignupScreen.dart';
 import 'package:trashtogether/utils/colors.dart';
 import 'package:trashtogether/widgets/TextInputField.dart';
+import '../resources/AuthMethods.dart';
+import '../utils/utils.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key? key}) : super(key: key);
@@ -24,7 +26,16 @@ class _LoginScreenState extends State<LoginScreen> {
     _emailController.dispose();
     _passwordController.dispose();
   }
-
+void loginUser() async {
+    String res = await AuthMethods().loginUser(
+        email: _emailController.text, password: _passwordController.text);
+    print(res);
+    if (res != "Success") {
+      showSnackBar(res, context);
+    } else {
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => const MainScreen()));
+    }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
