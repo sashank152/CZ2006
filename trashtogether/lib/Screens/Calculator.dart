@@ -71,71 +71,90 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Container(
-        child: Column(
-          children: [
-            Text("Calculate your cash from your trash",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                    color: Colors.blue.shade200)),
-            SizedBox(
-              height: 60,
-            ),
-            Text("Newspaper"),
-            TextInputField(
-                hintText: "Weight in Kgs",
-                controller: newspaperController,
-                inputType: TextInputType.number),
-            SizedBox(
-              height: 30,
-            ),
-            Text("Cartons"),
-            TextInputField(
-                hintText: "Weight in kgs",
-                controller: cartonController,
-                inputType: TextInputType.number),
-            SizedBox(
-              height: 30,
-            ),
-            Text("Other Papers"),
-            TextInputField(
-                hintText: "Weight in kgs",
-                controller: otherPaperController,
-                inputType: TextInputType.number),
-            SizedBox(
-              height: 30,
-            ),
-            Text("Aluminium cans"),
-            TextInputField(
-                hintText: "Weight in kgs",
-                controller: aluminiumCanController,
-                inputType: TextInputType.number),
-            Text("Food tins"),
-            TextInputField(
-                hintText: "Weight in kgs",
-                controller: foodTinController,
-                inputType: TextInputType.number),
-            Text("PET & HDPE Bottles"),
-            TextInputField(
-                hintText: "Weight in kgs",
-                controller: hdpeBottleController,
-                inputType: TextInputType.number),
-            Text("Glass bottles"),
-            TextInputField(
-                hintText: "Weight in kgs",
-                controller: glassController,
-                inputType: TextInputType.number),
-            Text("Reusable Clothing"),
-            TextInputField(
-                hintText: "Weight in kgs",
-                controller: clothingController,
-                inputType: TextInputType.number),
-            ElevatedButton(onPressed: calculate, child: Text("Calculate Sum")),
-            Text(sum.toString())
-          ],
-        ),
+    return Container(
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Expanded(
+                flex: 1,
+                child: Column(
+                  children: [
+                    //const Text("Newspaper"),
+                    Expanded(
+                      flex: 1,
+                      child: TextInputField(
+                          hintText: "Weight in Kgs",
+                          controller: newspaperController,
+                          inputType: TextInputType.number),
+                    ),
+                  ],
+                ),
+              ),
+              // const Text("Food tins"),*
+              // Flexible(
+              //   child: TextInputField(
+              //       hintText: "Weight in kgs",
+              //       controller: foodTinController,
+              //       inputType: TextInputType.number),
+              // ),
+            ],
+          ),
+          const SizedBox(
+            height: 60,
+          ),
+          // Row(
+          //   children: [
+          //     const Text("Cartons"),
+          //     TextInputField(
+          //         hintText: "Weight in kgs",
+          //         controller: cartonController,
+          //         inputType: TextInputType.number),
+          //     const SizedBox(
+          //       height: 30,
+          //     ),
+          //     const Text("Other Papers"),
+          //     TextInputField(
+          //         hintText: "Weight in kgs",
+          //         controller: otherPaperController,
+          //         inputType: TextInputType.number),
+          //   ],
+          // ),
+          // const SizedBox(
+          //   height: 30,
+          // ),
+          // Row(
+          //   children: [
+          //     const Text("Aluminium cans"),
+          //     TextInputField(
+          //         hintText: "Weight in kgs",
+          //         controller: aluminiumCanController,
+          //         inputType: TextInputType.number),
+          //     const Text("PET & HDPE Bottles"),
+          //     TextInputField(
+          //         hintText: "Weight in kgs",
+          //         controller: hdpeBottleController,
+          //         inputType: TextInputType.number),
+          //   ],
+          // ),
+          // Row(
+          //   children: [
+          //     const Text("Glass bottles"),
+          //     TextInputField(
+          //         hintText: "Weight in kgs",
+          //         controller: glassController,
+          //         inputType: TextInputType.number),
+          //     const Text("Reusable Clothing"),
+          //     TextInputField(
+          //         hintText: "Weight in kgs",
+          //         controller: clothingController,
+          //         inputType: TextInputType.number),
+          //   ],
+          // ),
+          // ElevatedButton(
+          //     onPressed: calculate, child: const Text("Calculate Sum")),
+          // Text(sum.toString())
+        ],
       ),
     );
   }

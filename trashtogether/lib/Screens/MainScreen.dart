@@ -67,7 +67,6 @@ class _MainScreenState extends State<MainScreen> {
             child: CircularProgressIndicator(),
           )
         : Scaffold(
-            backgroundColor: mobileBackgroundColor,
             appBar: AppBar(
               actions: [
                 IconButton(
@@ -78,7 +77,7 @@ class _MainScreenState extends State<MainScreen> {
               ],
               title: const Text("Home"),
               centerTitle: true,
-              backgroundColor: mobileBackgroundColor,
+              backgroundColor: fieldColor,
             ),
             body: PageView(
               physics: const NeverScrollableScrollPhysics(),
@@ -99,6 +98,7 @@ class _MainScreenState extends State<MainScreen> {
             ),
             bottomNavigationBar: SafeArea(
               child: BottomNavigationBar(
+                backgroundColor: fieldColor,
                 items: [
                   BottomNavigationBarItem(
                       label: '',
@@ -106,21 +106,21 @@ class _MainScreenState extends State<MainScreen> {
                         Icons.filter_list_rounded,
                         color: _page == 0 ? Colors.white : Colors.grey,
                       ),
-                      backgroundColor: mobileBackgroundColor),
+                      backgroundColor: fieldColor),
                   BottomNavigationBarItem(
                       label: '',
                       icon: Icon(
                         Icons.add_location_rounded,
                         color: _page == 1 ? Colors.white : Colors.grey,
                       ),
-                      backgroundColor: mobileBackgroundColor),
+                      backgroundColor: fieldColor),
                   BottomNavigationBarItem(
                       label: '',
                       icon: Icon(
                         Icons.calculate_rounded,
                         color: _page == 2 ? Colors.white : Colors.grey,
                       ),
-                      backgroundColor: mobileBackgroundColor)
+                      backgroundColor: fieldColor)
                 ],
                 onTap: navigationTapped,
               ),
