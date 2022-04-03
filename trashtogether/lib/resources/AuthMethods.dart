@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:trashtogether/resources/storageMethods.dart';
+import 'package:trashtogether/models/User.dart' as model;
 
 class AuthMethods {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -27,12 +28,17 @@ class AuthMethods {
         String photoUrl =
             await StorageMethods().uploadImage('profilepics', file);
 
-        await _firestore.collection('users').doc(cred.user!.uid).set({
-          'username': username,
-          'uid': cred.user!.uid,
-          'email': email,
-          'photoUrl': photoUrl
-        });
+        model.User user = model.User(
+            username: username,
+            uid: cred.user!.uid,
+            email: email,
+            cash: 0.0,
+            photoURL: photoUrl);
+
+        await _firestore
+            .collection('users')
+            .doc(cred.user!.uid)
+            .set(user.toJson());
         res = "Successfully signed up!!!";
       }
     } on FirebaseAuthException catch (err) {
@@ -66,6 +72,44 @@ class AuthMethods {
       } else if (e.code == 'wrong-password') {
         res = "Wrong password";
       }
+    }
+    return res;
+  }
+
+  Future<String> signOutUser() async {
+    String res = "Some error occurred";
+    try {
+      await _auth.signOut();
+      res = "Success";
+    } on FirebaseAuthException catch (e) {
+      res = e.toString();
+      // An error happened.
+    }
+    return res;
+  }
+
+  // Sign-out successful.
+  Future<String> changePassword(
+      String currentPassword, String newPassword) async {
+    String res = "error";
+    User? currentuser = _auth.currentUser;
+    try {
+      await currentuser?.updatePassword(newPassword);
+      res = "success";
+    } on FirebaseAuthException catch (e) {
+      res = e.toString();
+    }
+    return res;
+  }
+
+  Future<String> changeDisplayname(String newDisplayName) async {
+    String res = "error";
+    User? currentuser = _auth.currentUser;
+    try {
+      await currentuser?.updateDisplayName(newDisplayName);
+      res = "success";
+    } on FirebaseAuthException catch (e) {
+      res = e.toString();
     }
     return res;
   }

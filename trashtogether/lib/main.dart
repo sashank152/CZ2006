@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:trashtogether/Screens/LoginScreen.dart';
+import 'package:trashtogether/Screens/MainScreen.dart';
+import 'package:trashtogether/Screens/SelectionScreen.dart';
 import 'package:trashtogether/utils/colors.dart';
 import 'package:firebase_core/firebase_core.dart';
 
