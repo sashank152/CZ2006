@@ -121,7 +121,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Container(
                         child: const Text(
                           'Sign Up',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, color: buttonColor),
                         ),
                         padding: EdgeInsets.only(
                             bottom: MediaQuery.of(context).size.height * .05),

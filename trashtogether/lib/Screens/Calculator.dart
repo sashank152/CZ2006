@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:trashtogether/utils/colors.dart';
 import 'package:trashtogether/utils/data.dart';
 import 'package:trashtogether/widgets/TextInputField.dart';
+import 'package:trashtogether/widgets/NumInputField.dart';
 
 class CalculatorScreen extends StatefulWidget {
   const CalculatorScreen({Key? key}) : super(key: key);
@@ -72,88 +73,250 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.fromLTRB(
+          MediaQuery.of(context).size.width * .05,
+          MediaQuery.of(context).size.height * .05,
+          MediaQuery.of(context).size.width * .05,
+          MediaQuery.of(context).size.height * .15),
       child: Column(
         children: [
-          Row(
-            children: [
-              Expanded(
-                flex: 1,
-                child: Column(
-                  children: [
-                    //const Text("Newspaper"),
-                    Expanded(
-                      flex: 1,
-                      child: TextInputField(
-                          hintText: "Weight in Kgs",
-                          controller: newspaperController,
-                          inputType: TextInputType.number),
+          const Text(
+            'Calculate your Cash from your Trash',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * .05,
+          ),
+          Expanded(
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              decoration: const BoxDecoration(
+                  color: inputColor,
+                  borderRadius: BorderRadius.all(Radius.circular(20))),
+              child: Column(
+                children: [
+                  Expanded(
+                    child: Row(
+                      //mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(12),
+                            child: Column(
+                              children: [
+                                const Text('Newspaper',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                Expanded(
+                                  child: NumInputField(
+                                      hintText: "Weight in Kgs",
+                                      controller: newspaperController,
+                                      inputType: TextInputType.number),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(12),
+                            child: Column(
+                              children: [
+                                const Text('Food Tins',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                Expanded(
+                                  child: NumInputField(
+                                      hintText: "Weight in Kgs",
+                                      controller: foodTinController,
+                                      inputType: TextInputType.number),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                  Expanded(
+                    child: Row(
+                      //mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(12),
+                            child: Column(
+                              children: [
+                                const Text(
+                                  'Cartons',
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                Expanded(
+                                  child: NumInputField(
+                                      hintText: "Weight in Kgs",
+                                      controller: cartonController,
+                                      inputType: TextInputType.number),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(12),
+                            child: Column(
+                              children: [
+                                const Text('Aluminium Cans',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                Expanded(
+                                  child: NumInputField(
+                                      hintText: "Weight in Kgs",
+                                      controller: aluminiumCanController,
+                                      inputType: TextInputType.number),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Row(
+                      //mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(12),
+                            child: Column(
+                              children: [
+                                const Text('Glass Bottles',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                Expanded(
+                                  child: NumInputField(
+                                      hintText: "Weight in Kgs",
+                                      controller: glassController,
+                                      inputType: TextInputType.number),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(12),
+                            child: Column(
+                              children: [
+                                const Text('Reusable Clothing',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                Expanded(
+                                  child: NumInputField(
+                                      hintText: "Weight in Kgs",
+                                      controller: clothingController,
+                                      inputType: TextInputType.number),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Row(
+                      //mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(12),
+                            child: Column(
+                              children: [
+                                const Text('Other Paper',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                Expanded(
+                                  child: NumInputField(
+                                      hintText: "Weight in Kgs",
+                                      controller: otherPaperController,
+                                      inputType: TextInputType.number),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(12),
+                            child: Column(
+                              children: [
+                                const Text('HDPE Bottles',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                Expanded(
+                                  child: NumInputField(
+                                      hintText: "Weight in Kgs",
+                                      controller: hdpeBottleController,
+                                      inputType: TextInputType.number),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: calculate,
+                    child: const Text("Calculate",
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.bold)),
+                    style: ElevatedButton.styleFrom(primary: buttonColor),
+                  ),
+                  Text(
+                    sum.toString(),
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 20),
+                  )
+                ],
               ),
-              // const Text("Food tins"),*
-              // Flexible(
-              //   child: TextInputField(
-              //       hintText: "Weight in kgs",
-              //       controller: foodTinController,
-              //       inputType: TextInputType.number),
-              // ),
-            ],
-          ),
-          const SizedBox(
-            height: 60,
-          ),
-          // Row(
-          //   children: [
-          //     const Text("Cartons"),
-          //     TextInputField(
-          //         hintText: "Weight in kgs",
-          //         controller: cartonController,
-          //         inputType: TextInputType.number),
-          //     const SizedBox(
-          //       height: 30,
-          //     ),
-          //     const Text("Other Papers"),
-          //     TextInputField(
-          //         hintText: "Weight in kgs",
-          //         controller: otherPaperController,
-          //         inputType: TextInputType.number),
-          //   ],
-          // ),
-          // const SizedBox(
-          //   height: 30,
-          // ),
-          // Row(
-          //   children: [
-          //     const Text("Aluminium cans"),
-          //     TextInputField(
-          //         hintText: "Weight in kgs",
-          //         controller: aluminiumCanController,
-          //         inputType: TextInputType.number),
-          //     const Text("PET & HDPE Bottles"),
-          //     TextInputField(
-          //         hintText: "Weight in kgs",
-          //         controller: hdpeBottleController,
-          //         inputType: TextInputType.number),
-          //   ],
-          // ),
-          // Row(
-          //   children: [
-          //     const Text("Glass bottles"),
-          //     TextInputField(
-          //         hintText: "Weight in kgs",
-          //         controller: glassController,
-          //         inputType: TextInputType.number),
-          //     const Text("Reusable Clothing"),
-          //     TextInputField(
-          //         hintText: "Weight in kgs",
-          //         controller: clothingController,
-          //         inputType: TextInputType.number),
-          //   ],
-          // ),
-          // ElevatedButton(
-          //     onPressed: calculate, child: const Text("Calculate Sum")),
-          // Text(sum.toString())
+            ),
+          )
         ],
       ),
     );

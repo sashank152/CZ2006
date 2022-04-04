@@ -20,17 +20,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
       body: Container(
         child: Column(
           children: [
-            Row(
-              children: [
-                Image(
-                  image: NetworkImage(
-                      "https://images.unsplash.com/photo-1594897030264-ab7d87efc473?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c3BsYXNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"),
-                ),
-                Text("Username"),
-              ],
+            Image(
+              image: NetworkImage(
+                  "https://images.unsplash.com/photo-1594897030264-ab7d87efc473?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c3BsYXNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"),
             ),
             Divider(),
-            Text("Description"),
+            Text("UserName"),
             TextButton(onPressed: () {}, child: Text("Change Username")),
             TextButton(onPressed: () {}, child: Text("Change Password")),
             Flexible(

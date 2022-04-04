@@ -21,6 +21,7 @@ class _MainScreenState extends State<MainScreen> {
   late Position currentPosition;
   int _page = 0;
   late PageController pageController;
+  LocationPermission permission = LocationPermission.unableToDetermine;
   void changePage(int page) {
     setState(() => _page = page);
   }
@@ -35,9 +36,25 @@ class _MainScreenState extends State<MainScreen> {
     });
   }
 
+  void getPermission() async {
+    permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.denied ||
+        permission == LocationPermission.deniedForever) {
+      permission = await Geolocator.requestPermission();
+      if (permission == LocationPermission.always ||
+          permission == LocationPermission.whileInUse) {
+        setState(() {
+          //isLoading = false;
+          _getCurrentLocation();
+        });
+      }
+    }
+  }
+
   @override
   void initState() {
     super.initState();
+    getPermission();
     pageController = PageController();
     _getCurrentLocation();
   }
@@ -63,10 +80,14 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return isLoading
-        ? const Center(
-            child: CircularProgressIndicator(),
+        ? Center(
+            child: (permission == LocationPermission.denied ||
+                    permission == LocationPermission.deniedForever)
+                ? Text('Please restart app and enable location permissions')
+                : const CircularProgressIndicator(),
           )
         : Scaffold(
+            resizeToAvoidBottomInset: false,
             appBar: AppBar(
               actions: [
                 IconButton(
