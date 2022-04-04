@@ -42,7 +42,7 @@ const places = [
       "Blk 114 Bukit Purmei @ Void deck"),
 ];
 
-const rates = <double>[0.15, 0.15, 0.1, 0.8, 0.25, 0.0, 0.0, 0, 25];
+const rates = <double>[0.15, 0.15, 0.1, 0.8, 0.25, 0.0, 0.0, 0.25];
 
 //const pages = [SelectionScreen(), Map(), CalculatorScreen()];
 

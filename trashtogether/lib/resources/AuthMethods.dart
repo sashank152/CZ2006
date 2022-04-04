@@ -25,7 +25,7 @@ class AuthMethods {
         UserCredential cred = await _auth.createUserWithEmailAndPassword(
             email: email, password: password);
 
-        String photoUrl =
+        String photoURL =
             await StorageMethods().uploadImage('profilepics', file);
 
         model.User user = model.User(
@@ -33,13 +33,13 @@ class AuthMethods {
             uid: cred.user!.uid,
             email: email,
             cash: 0.0,
-            photoURL: photoUrl);
+            photoURL: photoURL);
 
         await _firestore
             .collection('users')
             .doc(cred.user!.uid)
             .set(user.toJson());
-        res = "Successfully signed up!!!";
+        res = "success";
       }
     } on FirebaseAuthException catch (err) {
       if (err.code == 'invalid-email') {

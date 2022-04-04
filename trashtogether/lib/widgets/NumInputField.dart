@@ -18,6 +18,8 @@ class NumInputField extends StatelessWidget {
         borderSide: Divider.createBorderSide(context),
         borderRadius: BorderRadius.circular(5));
     return TextField(
+      textAlign: TextAlign.center,
+      textAlignVertical: TextAlignVertical.center,
       style: const TextStyle(color: Colors.white),
       controller: controller,
       decoration: InputDecoration(
@@ -28,7 +30,7 @@ class NumInputField extends StatelessWidget {
         focusedBorder: inputBorder,
         enabledBorder: inputBorder,
         filled: true,
-        //contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
+        contentPadding: const EdgeInsets.only(top: 4),
       ),
       keyboardType: inputType,
     );

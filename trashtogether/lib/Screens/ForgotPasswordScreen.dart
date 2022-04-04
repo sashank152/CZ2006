@@ -55,54 +55,63 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           Container(
             padding: EdgeInsets.symmetric(
                 horizontal: MediaQuery.of(context).size.width * .1),
-            child: Column(
-              children: [
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * .15,
-                ),
-                const Text(
-                  'Please enter your email to reset your password',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * .33,
-                ),
-                TextInputField(
-                  controller: _emailController,
-                  hintText: "Email",
-                  inputType: TextInputType.emailAddress,
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * .08,
-                ),
-                GestureDetector(
-                  onTap: forgotpassword,
-                  child: Container(
-                    child: isLoading
-                        ? const Center(
-                            child:
-                                CircularProgressIndicator(color: Colors.white))
-                        : const Text(
-                            'Submit',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                    width: double.infinity,
-                    alignment: Alignment.center,
-                    padding: const EdgeInsets.symmetric(vertical: 12),
-                    decoration: const ShapeDecoration(
-                      color: buttonColor,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(4)),
+            child: CustomScrollView(
+              slivers: [
+                SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * .15,
                       ),
-                    ),
+                      const Text(
+                        'Please enter your email to reset your password',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 25),
+                      ),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * .33,
+                      ),
+                      TextInputField(
+                        controller: _emailController,
+                        hintText: "Email",
+                        inputType: TextInputType.emailAddress,
+                      ),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * .08,
+                      ),
+                      GestureDetector(
+                        onTap: forgotpassword,
+                        child: Container(
+                          child: isLoading
+                              ? const Center(
+                                  child: CircularProgressIndicator(
+                                      color: Colors.white))
+                              : const Text(
+                                  'Submit',
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                          width: double.infinity,
+                          alignment: Alignment.center,
+                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          decoration: const ShapeDecoration(
+                            color: buttonColor,
+                            shape: RoundedRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(4)),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * .02,
+                      ),
+                      Flexible(
+                        child: Container(),
+                        flex: 2,
+                      ),
+                    ],
                   ),
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * .02,
-                ),
-                Flexible(
-                  child: Container(),
-                  flex: 2,
                 ),
               ],
             ),
