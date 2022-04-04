@@ -113,4 +113,15 @@ class AuthMethods {
     }
     return res;
   }
+
+  Future<String> forgotPassword({required String email}) async {
+    String res = "error";
+    try {
+      await _auth.sendPasswordResetEmail(email: email);
+      res = "Success";
+    } on FirebaseAuthException catch (e) {
+      res = e.toString();
+    }
+    return res;
+  }
 }
