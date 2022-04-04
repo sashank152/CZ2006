@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:trashtogether/Screens/ForgotPasswordScreen.dart';
+import 'package:trashtogether/Screens/LoginScreen.dart';
 import 'package:trashtogether/Screens/MainScreen.dart';
 import 'package:trashtogether/Screens/SignupScreen.dart';
 import 'package:trashtogether/utils/colors.dart';
@@ -9,33 +9,34 @@ import 'package:trashtogether/widgets/TextInputField.dart';
 import '../resources/AuthMethods.dart';
 import '../utils/utils.dart';
 
-class LoginScreen extends StatefulWidget {
-  LoginScreen({Key? key}) : super(key: key);
+class ForgotPasswordScreen extends StatefulWidget {
+  ForgotPasswordScreen({Key? key}) : super(key: key);
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<ForgotPasswordScreen> createState() => _ForgotPasswordScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   final TextEditingController _emailController = TextEditingController();
   bool isLoading = false;
-  final TextEditingController _passwordController = TextEditingController();
 
   @override
   void dispose() {
     super.dispose();
     _emailController.dispose();
-    _passwordController.dispose();
   }
 
-  void loginUser() async {
-    String res = await AuthMethods().loginUser(
-        email: _emailController.text, password: _passwordController.text);
+  void forgotpassword() async {
+    String res =
+        await AuthMethods().forgotPassword(email: _emailController.text);
     if (res != "Success") {
       showSnackBar(res, context);
     } else {
-      Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const MainScreen()));
+      showSnackBar(
+          "An email has been sent to your email account. Please check the junk/spam folder",
+          context);
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (context) => LoginScreen()));
     }
   }
 
@@ -60,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: MediaQuery.of(context).size.height * .15,
                 ),
                 const Text(
-                  'Trash Together',
+                  'Please enter your email to reset your password',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                 ),
                 SizedBox(
@@ -71,39 +72,18 @@ class _LoginScreenState extends State<LoginScreen> {
                   hintText: "Email",
                   inputType: TextInputType.emailAddress,
                 ),
-                const SizedBox(
-                  height: 15,
-                ),
-                TextInputField(
-                  controller: _passwordController,
-                  hintText: "Password",
-                  inputType: TextInputType.text,
-                  isPassword: true,
-                ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * .08,
                 ),
                 GestureDetector(
-                  onTap: () => Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(
-                          builder: (context) => ForgotPasswordScreen())),
-                  child: const Text(
-                    "Forgot Password?",
-                    style: TextStyle(color: textColor),
-                  ),
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * .02,
-                ),
-                GestureDetector(
-                  onTap: loginUser,
+                  onTap: forgotpassword,
                   child: Container(
                     child: isLoading
                         ? const Center(
                             child:
                                 CircularProgressIndicator(color: Colors.white))
                         : const Text(
-                            'Sign in',
+                            'Submit',
                             style: TextStyle(color: Colors.white),
                           ),
                     width: double.infinity,
@@ -117,32 +97,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .02,
+                ),
                 Flexible(
                   child: Container(),
                   flex: 2,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      child: const Text('Dont have an account?'),
-                      padding: EdgeInsets.only(
-                          bottom: MediaQuery.of(context).size.height * .05),
-                    ),
-                    GestureDetector(
-                      onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const SignupScreen())),
-                      child: Container(
-                        child: const Text(
-                          'Sign Up',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, color: buttonColor),
-                        ),
-                        padding: EdgeInsets.only(
-                            bottom: MediaQuery.of(context).size.height * .05),
-                      ),
-                    ),
-                  ],
                 ),
               ],
             ),

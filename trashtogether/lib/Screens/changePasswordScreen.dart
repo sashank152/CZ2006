@@ -1,41 +1,49 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:trashtogether/Screens/ForgotPasswordScreen.dart';
+import 'package:trashtogether/Screens/LoginScreen.dart';
 import 'package:trashtogether/Screens/MainScreen.dart';
+import 'package:trashtogether/Screens/ProfileScreen.dart';
 import 'package:trashtogether/Screens/SignupScreen.dart';
 import 'package:trashtogether/utils/colors.dart';
 import 'package:trashtogether/widgets/TextInputField.dart';
 import '../resources/AuthMethods.dart';
 import '../utils/utils.dart';
 
-class LoginScreen extends StatefulWidget {
-  LoginScreen({Key? key}) : super(key: key);
+class changePasswordScreen extends StatefulWidget {
+  changePasswordScreen({Key? key}) : super(key: key);
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<changePasswordScreen> createState() => _changePasswordScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
-  final TextEditingController _emailController = TextEditingController();
+class _changePasswordScreenState extends State<changePasswordScreen> {
+  final TextEditingController _currentpasswordController =
+      TextEditingController();
+  final TextEditingController _newpasswordController = TextEditingController();
+  final TextEditingController _confirmnewpasswordController =
+      TextEditingController();
   bool isLoading = false;
-  final TextEditingController _passwordController = TextEditingController();
 
   @override
   void dispose() {
     super.dispose();
-    _emailController.dispose();
-    _passwordController.dispose();
+    _currentpasswordController.dispose();
+    _newpasswordController.dispose();
+    _confirmnewpasswordController.dispose();
   }
 
-  void loginUser() async {
-    String res = await AuthMethods().loginUser(
-        email: _emailController.text, password: _passwordController.text);
-    if (res != "Success") {
+  void changePassword() async {
+    String res = await AuthMethods().changePassword(
+        _currentpasswordController.text,
+        _newpasswordController.text,
+        _confirmnewpasswordController.text);
+    if (res != "success") {
       showSnackBar(res, context);
     } else {
+      showSnackBar("Password has been changed", context);
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const MainScreen()));
+          MaterialPageRoute(builder: (context) => ProfileScreen()));
     }
   }
 
@@ -60,50 +68,48 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: MediaQuery.of(context).size.height * .15,
                 ),
                 const Text(
-                  'Trash Together',
+                  'Change Password',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                 ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * .33,
                 ),
                 TextInputField(
-                  controller: _emailController,
-                  hintText: "Email",
-                  inputType: TextInputType.emailAddress,
-                ),
-                const SizedBox(
-                  height: 15,
-                ),
-                TextInputField(
-                  controller: _passwordController,
-                  hintText: "Password",
+                  controller: _currentpasswordController,
+                  hintText: "Enter Old Password",
                   inputType: TextInputType.text,
                   isPassword: true,
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * .08,
+                  height: MediaQuery.of(context).size.height * .025,
                 ),
-                GestureDetector(
-                  onTap: () => Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(
-                          builder: (context) => ForgotPasswordScreen())),
-                  child: const Text(
-                    "Forgot Password?",
-                    style: TextStyle(color: textColor),
-                  ),
+                TextInputField(
+                  controller: _newpasswordController,
+                  hintText: "Enter new Password",
+                  inputType: TextInputType.text,
+                  isPassword: true,
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * .02,
+                  height: MediaQuery.of(context).size.height * .025,
+                ),
+                TextInputField(
+                  controller: _confirmnewpasswordController,
+                  hintText: "Confirm new Password",
+                  inputType: TextInputType.text,
+                  isPassword: true,
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .05,
                 ),
                 GestureDetector(
-                  onTap: loginUser,
+                  onTap: changePassword,
                   child: Container(
                     child: isLoading
                         ? const Center(
                             child:
                                 CircularProgressIndicator(color: Colors.white))
                         : const Text(
-                            'Sign in',
+                            'Submit',
                             style: TextStyle(color: Colors.white),
                           ),
                     width: double.infinity,
@@ -117,32 +123,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .02,
+                ),
                 Flexible(
                   child: Container(),
                   flex: 2,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      child: const Text('Dont have an account?'),
-                      padding: EdgeInsets.only(
-                          bottom: MediaQuery.of(context).size.height * .05),
-                    ),
-                    GestureDetector(
-                      onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const SignupScreen())),
-                      child: Container(
-                        child: const Text(
-                          'Sign Up',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, color: buttonColor),
-                        ),
-                        padding: EdgeInsets.only(
-                            bottom: MediaQuery.of(context).size.height * .05),
-                      ),
-                    ),
-                  ],
                 ),
               ],
             ),

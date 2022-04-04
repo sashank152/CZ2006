@@ -89,9 +89,17 @@ class AuthMethods {
   }
 
   // Sign-out successful.
-  Future<String> changePassword(
-      String currentPassword, String newPassword) async {
+  Future<String> changePassword(String currentPassword, String newPassword,
+      String confirmnewPassword) async {
     String res = "error";
+    if (newPassword != confirmnewPassword) {
+      res = "Confirm password is not equal to your new password";
+      return res;
+    }
+    if (currentPassword == newPassword) {
+      res = "New Password Cannot Be The Same As Your Old Password";
+      return res;
+    }
     User? currentuser = _auth.currentUser;
     try {
       await currentuser?.updatePassword(newPassword);
@@ -102,12 +110,46 @@ class AuthMethods {
     return res;
   }
 
-  Future<String> changeDisplayname(String newDisplayName) async {
+  Future<String> changeDisplayname(
+      String newDisplayName, String currentDisplayName) async {
     String res = "error";
-    User? currentuser = _auth.currentUser;
+    if (newDisplayName == currentDisplayName) {
+      res = "New Username Cannot Be The Same As The Old Username";
+      return res;
+    }
     try {
-      await currentuser?.updateDisplayName(newDisplayName);
-      res = "success";
+      String currentuid = _auth.currentUser!.uid;
+      DocumentSnapshot usersnap = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(currentuid)
+          .get();
+      var userData = usersnap.data() as Map<dynamic, dynamic>;
+      userData['username'] = newDisplayName;
+
+      await _firestore
+          .collection('users')
+          .doc(currentuid)
+          .set(userData as Map<String, dynamic>);
+      res = "Success";
+    } on FirebaseAuthException catch (e) {
+      res = e.toString();
+    }
+
+    // User? currentuser = _auth.currentUser;
+    // try {
+    //   await currentuser?.updateDisplayName(newDisplayName);
+    //   res = "success";
+    // } on FirebaseAuthException catch (e) {
+    //   res = e.toString();
+    // }
+    return res;
+  }
+
+  Future<String> forgotPassword({required String email}) async {
+    String res = "error";
+    try {
+      await _auth.sendPasswordResetEmail(email: email);
+      res = "Success";
     } on FirebaseAuthException catch (e) {
       res = e.toString();
     }
