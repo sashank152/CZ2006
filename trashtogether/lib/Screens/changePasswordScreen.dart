@@ -3,40 +3,47 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:trashtogether/Screens/LoginScreen.dart';
 import 'package:trashtogether/Screens/MainScreen.dart';
+import 'package:trashtogether/Screens/ProfileScreen.dart';
 import 'package:trashtogether/Screens/SignupScreen.dart';
 import 'package:trashtogether/utils/colors.dart';
 import 'package:trashtogether/widgets/TextInputField.dart';
 import '../resources/AuthMethods.dart';
 import '../utils/utils.dart';
 
-class ForgotPasswordScreen extends StatefulWidget {
-  ForgotPasswordScreen({Key? key}) : super(key: key);
+class changePasswordScreen extends StatefulWidget {
+  changePasswordScreen({Key? key}) : super(key: key);
 
   @override
-  State<ForgotPasswordScreen> createState() => _ForgotPasswordScreenState();
+  State<changePasswordScreen> createState() => _changePasswordScreenState();
 }
 
-class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
-  final TextEditingController _emailController = TextEditingController();
+class _changePasswordScreenState extends State<changePasswordScreen> {
+  final TextEditingController _currentpasswordController =
+      TextEditingController();
+  final TextEditingController _newpasswordController = TextEditingController();
+  final TextEditingController _confirmnewpasswordController =
+      TextEditingController();
   bool isLoading = false;
 
   @override
   void dispose() {
     super.dispose();
-    _emailController.dispose();
+    _currentpasswordController.dispose();
+    _newpasswordController.dispose();
+    _confirmnewpasswordController.dispose();
   }
 
-  void forgotpassword() async {
-    String res =
-        await AuthMethods().forgotPassword(email: _emailController.text);
-    if (res != "Success") {
+  void changePassword() async {
+    String res = await AuthMethods().changePassword(
+        _currentpasswordController.text,
+        _newpasswordController.text,
+        _confirmnewpasswordController.text);
+    if (res != "success") {
       showSnackBar(res, context);
     } else {
-      showSnackBar(
-          "An email has been sent to your email account. Please check the junk/spam folder",
-          context);
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => LoginScreen()));
+      showSnackBar("Password has been changed", context);
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => ProfileScreen()));
     }
   }
 
@@ -61,22 +68,41 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   height: MediaQuery.of(context).size.height * .15,
                 ),
                 const Text(
-                  'Please enter your email to reset your password',
+                  'Change Password',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                 ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * .33,
                 ),
                 TextInputField(
-                  controller: _emailController,
-                  hintText: "Email",
-                  inputType: TextInputType.emailAddress,
+                  controller: _currentpasswordController,
+                  hintText: "Enter Old Password",
+                  inputType: TextInputType.text,
+                  isPassword: true,
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * .08,
+                  height: MediaQuery.of(context).size.height * .025,
+                ),
+                TextInputField(
+                  controller: _newpasswordController,
+                  hintText: "Enter new Password",
+                  inputType: TextInputType.text,
+                  isPassword: true,
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .025,
+                ),
+                TextInputField(
+                  controller: _confirmnewpasswordController,
+                  hintText: "Confirm new Password",
+                  inputType: TextInputType.text,
+                  isPassword: true,
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .05,
                 ),
                 GestureDetector(
-                  onTap: forgotpassword,
+                  onTap: changePassword,
                   child: Container(
                     child: isLoading
                         ? const Center(

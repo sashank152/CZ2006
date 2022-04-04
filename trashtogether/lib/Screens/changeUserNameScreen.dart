@@ -1,42 +1,43 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:trashtogether/Screens/LoginScreen.dart';
 import 'package:trashtogether/Screens/MainScreen.dart';
+import 'package:trashtogether/Screens/ProfileScreen.dart';
 import 'package:trashtogether/Screens/SignupScreen.dart';
 import 'package:trashtogether/utils/colors.dart';
 import 'package:trashtogether/widgets/TextInputField.dart';
 import '../resources/AuthMethods.dart';
 import '../utils/utils.dart';
 
-class ForgotPasswordScreen extends StatefulWidget {
-  ForgotPasswordScreen({Key? key}) : super(key: key);
+class changeUserNameScreen extends StatefulWidget {
+  changeUserNameScreen({Key? key}) : super(key: key);
 
   @override
-  State<ForgotPasswordScreen> createState() => _ForgotPasswordScreenState();
+  State<changeUserNameScreen> createState() => _changeUserNameScreenState();
 }
 
-class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
-  final TextEditingController _emailController = TextEditingController();
+class _changeUserNameScreenState extends State<changeUserNameScreen> {
+  final TextEditingController _currentusernameController =
+      TextEditingController();
+  final TextEditingController _newusernameController = TextEditingController();
   bool isLoading = false;
 
   @override
   void dispose() {
     super.dispose();
-    _emailController.dispose();
+    _currentusernameController.dispose();
+    _newusernameController.dispose();
   }
 
-  void forgotpassword() async {
-    String res =
-        await AuthMethods().forgotPassword(email: _emailController.text);
+  void changeUserName() async {
+    String res = await AuthMethods().changeDisplayname(
+        _newusernameController.text, _currentusernameController.text);
     if (res != "Success") {
       showSnackBar(res, context);
     } else {
-      showSnackBar(
-          "An email has been sent to your email account. Please check the junk/spam folder",
-          context);
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => LoginScreen()));
+      showSnackBar("Username has been changed", context);
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => const ProfileScreen()));
     }
   }
 
@@ -61,22 +62,30 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   height: MediaQuery.of(context).size.height * .15,
                 ),
                 const Text(
-                  'Please enter your email to reset your password',
+                  'Change Username',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                 ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * .33,
                 ),
                 TextInputField(
-                  controller: _emailController,
-                  hintText: "Email",
-                  inputType: TextInputType.emailAddress,
+                  controller: _currentusernameController,
+                  hintText: "Enter Old Username",
+                  inputType: TextInputType.text,
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * .08,
+                  height: MediaQuery.of(context).size.height * .025,
+                ),
+                TextInputField(
+                  controller: _newusernameController,
+                  hintText: "Enter New Username",
+                  inputType: TextInputType.text,
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * .05,
                 ),
                 GestureDetector(
-                  onTap: forgotpassword,
+                  onTap: changeUserName,
                   child: Container(
                     child: isLoading
                         ? const Center(
