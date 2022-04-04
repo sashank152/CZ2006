@@ -10,3 +10,5 @@ const inputColor = Color.fromRGBO(208, 249, 207, .7);
 const textColor = Color.fromRGBO(126, 206, 144, 1);
 const buttonColor = Color.fromRGBO(161, 233, 168, 1);
 const fieldColor = Color.fromRGBO(138, 227, 147, 1);
+const containerColor = Color.fromRGBO(174, 252, 185, .7);
+const darkgreen = Color.fromRGBO(29, 138, 40, 0.7);

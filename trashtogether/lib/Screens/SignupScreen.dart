@@ -7,6 +7,9 @@ import 'package:trashtogether/Screens/MainScreen.dart';
 import 'package:trashtogether/utils/colors.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:trashtogether/widgets/TextInputField.dart';
+import 'package:trashtogether/utils/utils.dart';
+
+import '../resources/AuthMethods.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({Key? key}) : super(key: key);
@@ -22,7 +25,7 @@ class _SignupScreenState extends State<SignupScreen> {
   final TextEditingController _usernameController = TextEditingController();
   final ImagePicker _picker = ImagePicker();
   bool isloading = false;
-  XFile? image;
+  Uint8List? image;
   @override
   void dispose() {
     super.dispose();
@@ -33,20 +36,22 @@ class _SignupScreenState extends State<SignupScreen> {
   }
 
   void selectImage() async {
-    XFile? im = await _picker.pickImage(source: ImageSource.gallery);
+    Uint8List? im = await pickImage(ImageSource.gallery);
     setState(() => image = im);
   }
 
   void signUpUser() async {
-    setState(() {
-      isloading = true;
-    });
-    Navigator.of(context)
-        .pushReplacement(MaterialPageRoute(builder: (context) => MainScreen()));
-    Navigator.of(context).pop();
-    setState(() {
-      isloading = false;
-    });
+    String res = await AuthMethods().signUpUser(
+        email: _emailController.text,
+        password: _passwordController.text,
+        username: _usernameController.text,
+        file: image!);
+    if (res != "sucess") {
+      showSnackBar(res, context);
+    } else {
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => LoginScreen()));
+    }
   }
 
   Widget build(BuildContext context) {
@@ -92,8 +97,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   image != null
                       ? CircleAvatar(
                           radius: 64,
-                          backgroundImage:
-                              Image.file(File(image!.path)) as ImageProvider,
+                          backgroundImage: MemoryImage(image!),
                         )
                       : const CircleAvatar(
                           radius: 64,
@@ -138,7 +142,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 height: 50,
               ),
               InkWell(
-                onTap: () => signUpUser(),
+                onTap: signUpUser,
                 child: Material(
                   child: Container(
                     child: isloading

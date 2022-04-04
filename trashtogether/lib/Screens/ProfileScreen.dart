@@ -34,7 +34,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             TextButton(
                 onPressed: () async {
-                  await AuthMethods().signoutUser();
+                  await AuthMethods().signOutUser();
                   Navigator.of(context).pushReplacement(
                       MaterialPageRoute(builder: (context) => LoginScreen()));
                 },

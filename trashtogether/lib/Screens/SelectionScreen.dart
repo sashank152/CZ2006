@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:trashtogether/models/Place.dart';
 import 'package:trashtogether/resources/LocationMethods.dart';
+import 'package:trashtogether/utils/colors.dart';
 import 'package:trashtogether/utils/data.dart';
 
 class SelectionScreen extends StatefulWidget {
@@ -70,79 +71,91 @@ class _SelectionScreenState extends State<SelectionScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Column(
-        children: [
-          Text("Select Type of bins/stations"),
-          DropdownButton<String>(
-            value: dropdownValueOne,
-            icon: Icon(Icons.arrow_downward_rounded),
-            elevation: 16,
-            style: const TextStyle(color: Colors.deepPurple),
-            underline: Container(
-              height: 2,
-              color: Colors.deepPurpleAccent,
+      decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("images/registration.png"), fit: BoxFit.cover)),
+      padding: const EdgeInsets.fromLTRB(50, 50, 50, 270),
+      child: Container(
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+            color: containerColor),
+        child: Column(
+          children: [
+            Text("Select Type of bins/stations"),
+            DropdownButton<String>(
+              value: dropdownValueOne,
+              icon:
+                  Icon(Icons.arrow_downward_rounded, color: webBackgroundColor),
+              elevation: 16,
+              style: const TextStyle(color: Colors.black),
+              underline: Container(
+                height: 2,
+                color: Colors.black,
+              ),
+              items: <String>['Recycle Bins', 'Cash For Trash', 'E-Waste']
+                  .map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Center(child: Text(value)),
+                );
+              }).toList(),
+              onChanged: (String? newValue) {
+                setState(() {
+                  dropdownValueOne = newValue!;
+                });
+              },
             ),
-            items: <String>['Recycle Bins', 'Cash For Trash', 'E-Waste']
-                .map<DropdownMenuItem<String>>((String value) {
-              return DropdownMenuItem<String>(
-                value: value,
-                child: Center(child: Text(value)),
-              );
-            }).toList(),
-            onChanged: (String? newValue) {
-              setState(() {
-                dropdownValueOne = newValue!;
-              });
-            },
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          Text("Select Location"),
-          DropdownButton<String>(
-            value: dropdownValueTwo,
-            icon: Icon(Icons.arrow_downward_rounded),
-            elevation: 16,
-            style: const TextStyle(color: Colors.deepPurple),
-            underline: Container(
-              height: 2,
-              color: Colors.deepPurpleAccent,
+            SizedBox(
+              height: 15,
             ),
-            items: locations.map<DropdownMenuItem<String>>((String value) {
-              return DropdownMenuItem<String>(
-                value: value,
-                child: Center(child: Text(value)),
-              );
-            }).toList(),
-            onChanged: (String? newValue) {
-              setState(() {
-                dropdownValueTwo = newValue!;
-              });
-            },
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(primary: Colors.blue),
-            onPressed: () {
-              changePlace();
-              widget.pageController.jumpToPage(1);
-            },
-            child: Text("Select"),
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(primary: Colors.blue),
-            onPressed: () {
-              Place place = getNearestPlace();
-              print(place.location);
-            },
-            child: Text("Select nearest location"),
-          ),
-        ],
+            Text("Select Location"),
+            DropdownButton<String>(
+              value: dropdownValueTwo,
+              icon:
+                  Icon(Icons.arrow_downward_rounded, color: webBackgroundColor),
+              elevation: 16,
+              style: const TextStyle(color: Colors.black),
+              underline: Container(
+                height: 2,
+                color: Colors.black,
+              ),
+              items: locations.map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Center(child: Text(value)),
+                );
+              }).toList(),
+              onChanged: (String? newValue) {
+                setState(() {
+                  dropdownValueTwo = newValue!;
+                });
+              },
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(primary: darkgreen),
+              onPressed: () {
+                changePlace();
+                widget.pageController.jumpToPage(1);
+              },
+              child: Text("Select"),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(primary: darkgreen),
+              onPressed: () {
+                Place place = getNearestPlace();
+                print(place.location);
+              },
+              child: Text("Select nearest location"),
+            ),
+          ],
+        ),
       ),
     );
   }

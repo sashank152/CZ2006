@@ -5,6 +5,8 @@ import 'package:trashtogether/Screens/MainScreen.dart';
 import 'package:trashtogether/Screens/SignupScreen.dart';
 import 'package:trashtogether/utils/colors.dart';
 import 'package:trashtogether/widgets/TextInputField.dart';
+import '../resources/AuthMethods.dart';
+import '../utils/utils.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key? key}) : super(key: key);
@@ -23,6 +25,17 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
     _emailController.dispose();
     _passwordController.dispose();
+  }
+
+  void loginUser() async {
+    String res = await AuthMethods().loginUser(
+        email: _emailController.text, password: _passwordController.text);
+    if (res != "Success") {
+      showSnackBar(res, context);
+    } else {
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => const MainScreen()));
+    }
   }
 
   @override
@@ -80,9 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: MediaQuery.of(context).size.height * .02,
                 ),
                 GestureDetector(
-                  onTap: () => Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(
-                          builder: (context) => const MainScreen())),
+                  onTap: loginUser,
                   child: Container(
                     child: isLoading
                         ? const Center(
