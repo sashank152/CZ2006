@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:typed_data';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -5,10 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:trashtogether/resources/storageMethods.dart';
 import 'package:trashtogether/models/User.dart' as model;
+import 'package:trashtogether/Screens/verifyEmailScreen.dart';
 
 class AuthMethods {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  bool isemailVerified = false;
   //sign up user
   Future<String> signUpUser(
       {required String email,
@@ -17,15 +20,29 @@ class AuthMethods {
       required Uint8List file}) async {
     String res = "Some error occurred";
     try {
-      if (email.isNotEmpty ||
-          password.isNotEmpty ||
-          username.isNotEmpty ||
+      if (email.isNotEmpty &&
+          password.isNotEmpty &&
+          username.isNotEmpty &&
           file != null) {
         //register user
+        if (password.length >= 16 || password.length < 6) {
+          res = "Password must be between 6-16 characters";
+          return res;
+        }
+        String formatter = email.split('@')[0];
+        if (formatter.contains('.') ||
+            formatter.contains('@') ||
+            formatter.contains(',') ||
+            formatter.contains('/') ||
+            formatter.contains('\'') ||
+            formatter.contains(';')) {
+          res = "Invalid Email";
+          return res;
+        }
         UserCredential cred = await _auth.createUserWithEmailAndPassword(
             email: email, password: password);
 
-        String photoUrl =
+        String photoURL =
             await StorageMethods().uploadImage('profilepics', file);
 
         model.User user = model.User(
@@ -33,13 +50,22 @@ class AuthMethods {
             uid: cred.user!.uid,
             email: email,
             cash: 0.0,
-            photoURL: photoUrl);
+            photoURL: photoURL);
 
         await _firestore
             .collection('users')
             .doc(cred.user!.uid)
             .set(user.toJson());
-        res = "Successfully signed up!!!";
+        res = "success";
+      } else if (email.isEmpty) {
+        res = "Email cannot be empty";
+        return res;
+      } else if (password.isEmpty) {
+        res = "Password cannot be empty";
+        return res;
+      } else if (username.isEmpty) {
+        res = "Username cannot be empty";
+        return res;
       }
     } on FirebaseAuthException catch (err) {
       if (err.code == 'invalid-email') {
@@ -56,15 +82,19 @@ class AuthMethods {
 
   Future<String> loginUser(
       {required String email, required String password}) async {
-    String res = "Some error occurred";
+    String res = "Email or password cannot be empty";
 
     try {
-      if (email.isNotEmpty || password.isNotEmpty) {
+      if (email.isNotEmpty && password.isNotEmpty) {
         await _auth.signInWithEmailAndPassword(
             email: email, password: password);
         res = "Success";
-      } else {
-        res = "Email or Password cannot be empty";
+      } else if (email.isEmpty) {
+        res = "Email cannot be empty";
+        return res;
+      } else if (password.isEmpty) {
+        res = "Password cannot be empty";
+        return res;
       }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {

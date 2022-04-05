@@ -56,62 +56,71 @@ class _changeUserNameScreenState extends State<changeUserNameScreen> {
           Container(
             padding: EdgeInsets.symmetric(
                 horizontal: MediaQuery.of(context).size.width * .1),
-            child: Column(
-              children: [
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * .15,
-                ),
-                const Text(
-                  'Change Username',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * .33,
-                ),
-                TextInputField(
-                  controller: _currentusernameController,
-                  hintText: "Enter Old Username",
-                  inputType: TextInputType.text,
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * .025,
-                ),
-                TextInputField(
-                  controller: _newusernameController,
-                  hintText: "Enter New Username",
-                  inputType: TextInputType.text,
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * .05,
-                ),
-                GestureDetector(
-                  onTap: changeUserName,
-                  child: Container(
-                    child: isLoading
-                        ? const Center(
-                            child:
-                                CircularProgressIndicator(color: Colors.white))
-                        : const Text(
-                            'Submit',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                    width: double.infinity,
-                    alignment: Alignment.center,
-                    padding: const EdgeInsets.symmetric(vertical: 12),
-                    decoration: const ShapeDecoration(
-                      color: buttonColor,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(4)),
+            child: CustomScrollView(
+              slivers: [
+                SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * .15,
                       ),
-                    ),
+                      const Text(
+                        'Change Username',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 25),
+                      ),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * .33,
+                      ),
+                      TextInputField(
+                        controller: _currentusernameController,
+                        hintText: "Enter Old Username",
+                        inputType: TextInputType.text,
+                      ),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * .025,
+                      ),
+                      TextInputField(
+                        controller: _newusernameController,
+                        hintText: "Enter New Username",
+                        inputType: TextInputType.text,
+                      ),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * .05,
+                      ),
+                      GestureDetector(
+                        onTap: changeUserName,
+                        child: Container(
+                          child: isLoading
+                              ? const Center(
+                                  child: CircularProgressIndicator(
+                                      color: Colors.white))
+                              : const Text(
+                                  'Submit',
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                          width: double.infinity,
+                          alignment: Alignment.center,
+                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          decoration: const ShapeDecoration(
+                            color: buttonColor,
+                            shape: RoundedRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(4)),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * .02,
+                      ),
+                      Flexible(
+                        child: Container(),
+                        flex: 2,
+                      ),
+                    ],
                   ),
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * .02,
-                ),
-                Flexible(
-                  child: Container(),
-                  flex: 2,
                 ),
               ],
             ),

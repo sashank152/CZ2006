@@ -55,7 +55,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       TextEditingController tec = controllerList[i];
       if (tec.text.isNotEmpty) {
         try {
-          prices.add(double.parse(tec.text) * rates[i]);
+          prices.add(double.parse(tec.text).abs() * rates[i]);
         } catch (e) {
           ScaffoldMessenger.of(context)
               .showSnackBar(SnackBar(content: Text(e.toString())));
@@ -101,7 +101,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                       children: [
                         Expanded(
                           child: Container(
-                            padding: const EdgeInsets.all(12),
+                            padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
                             child: Column(
                               children: [
                                 const Text('Newspaper',
@@ -123,7 +123,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                         ),
                         Expanded(
                           child: Container(
-                            padding: const EdgeInsets.all(12),
+                            padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
                             child: Column(
                               children: [
                                 const Text('Food Tins',
@@ -152,7 +152,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                       children: [
                         Expanded(
                           child: Container(
-                            padding: const EdgeInsets.all(12),
+                            padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
                             child: Column(
                               children: [
                                 const Text(
@@ -176,7 +176,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                         ),
                         Expanded(
                           child: Container(
-                            padding: const EdgeInsets.all(12),
+                            padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
                             child: Column(
                               children: [
                                 const Text('Aluminium Cans',
@@ -205,7 +205,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                       children: [
                         Expanded(
                           child: Container(
-                            padding: const EdgeInsets.all(12),
+                            padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
                             child: Column(
                               children: [
                                 const Text('Glass Bottles',
@@ -227,7 +227,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                         ),
                         Expanded(
                           child: Container(
-                            padding: const EdgeInsets.all(12),
+                            padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
                             child: Column(
                               children: [
                                 const Text('Reusable Clothing',
@@ -256,7 +256,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                       children: [
                         Expanded(
                           child: Container(
-                            padding: const EdgeInsets.all(12),
+                            padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
                             child: Column(
                               children: [
                                 const Text('Other Paper',
@@ -278,7 +278,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                         ),
                         Expanded(
                           child: Container(
-                            padding: const EdgeInsets.all(12),
+                            padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
                             child: Column(
                               children: [
                                 const Text('HDPE Bottles',
@@ -306,7 +306,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     child: const Text("Calculate",
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold)),
-                    style: ElevatedButton.styleFrom(primary: buttonColor),
+                    style: ElevatedButton.styleFrom(primary: darkgreen),
                   ),
                   Text(
                     sum.toString(),

@@ -98,7 +98,11 @@ class _MainScreenState extends State<MainScreen> {
                       builder: (context) => const ProfileScreen())),
                 ),
               ],
-              title: const Text("Home"),
+              title: Text(_page == 0
+                  ? "Select Location"
+                  : _page == 1
+                      ? "Map"
+                      : "Calculator"),
               centerTitle: true,
               backgroundColor: fieldColor,
             ),
@@ -127,21 +131,21 @@ class _MainScreenState extends State<MainScreen> {
                       label: '',
                       icon: Icon(
                         Icons.filter_list_rounded,
-                        color: _page == 0 ? Colors.white : Colors.grey,
+                        color: _page == 0 ? Colors.white : Colors.black,
                       ),
                       backgroundColor: fieldColor),
                   BottomNavigationBarItem(
                       label: '',
                       icon: Icon(
                         Icons.add_location_rounded,
-                        color: _page == 1 ? Colors.white : Colors.grey,
+                        color: _page == 1 ? Colors.white : Colors.black,
                       ),
                       backgroundColor: fieldColor),
                   BottomNavigationBarItem(
                       label: '',
                       icon: Icon(
                         Icons.calculate_rounded,
-                        color: _page == 2 ? Colors.white : Colors.grey,
+                        color: _page == 2 ? Colors.white : Colors.black,
                       ),
                       backgroundColor: fieldColor)
                 ],

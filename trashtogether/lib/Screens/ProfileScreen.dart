@@ -38,13 +38,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
     });
     try {
       currentuid = _auth.currentUser!.uid;
+      print(currentuid);
 
       DocumentSnapshot usersnap = await FirebaseFirestore.instance
           .collection('users')
           .doc(currentuid)
           .get();
       var userData = usersnap.data() as Map<dynamic, dynamic>;
-      photourl = userData['photoUrl'];
+
+      photourl = userData['photoURL'];
     } catch (e) {
       showSnackBar(e.toString(), context);
     }
@@ -59,8 +61,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
       showSnackBar(res, context);
     } else {
       showSnackBar("Successfully Signed Out", context);
+      Navigator.of(context).pop();
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => MainScreen()));
+          MaterialPageRoute(builder: (context) => LoginScreen()));
     }
   }
 
