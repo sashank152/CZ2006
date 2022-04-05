@@ -1,13 +1,16 @@
+import 'dart:async';
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:trashtogether/Screens/LoginScreen.dart';
 import 'package:trashtogether/Screens/MainScreen.dart';
+import 'package:trashtogether/Screens/verifyEmailScreen.dart';
 import 'package:trashtogether/utils/colors.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:trashtogether/widgets/TextInputField.dart';
 import 'package:trashtogether/utils/utils.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 import '../resources/AuthMethods.dart';
 
@@ -53,9 +56,11 @@ class _SignupScreenState extends State<SignupScreen> {
     if (res != "success") {
       showSnackBar(res, context);
     } else {
-      showSnackBar("Successfully signed up!", context);
+      showSnackBar(
+          "A verification email has been sent to your email address. Please check your junk/spam folder",
+          context);
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => LoginScreen()));
+          MaterialPageRoute(builder: (context) => const verifyEmailScreen()));
     }
   }
 

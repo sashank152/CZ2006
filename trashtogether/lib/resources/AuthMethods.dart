@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:typed_data';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -9,6 +10,7 @@ import 'package:trashtogether/models/User.dart' as model;
 class AuthMethods {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  bool isemailVerified = false;
   //sign up user
   Future<String> signUpUser(
       {required String email,
@@ -17,9 +19,9 @@ class AuthMethods {
       required Uint8List file}) async {
     String res = "Some error occurred";
     try {
-      if (email.isNotEmpty ||
-          password.isNotEmpty ||
-          username.isNotEmpty ||
+      if (email.isNotEmpty &&
+          password.isNotEmpty &&
+          username.isNotEmpty &&
           file != null) {
         //register user
         UserCredential cred = await _auth.createUserWithEmailAndPassword(
@@ -40,6 +42,15 @@ class AuthMethods {
             .doc(cred.user!.uid)
             .set(user.toJson());
         res = "success";
+      } else if (email.isEmpty) {
+        res = "Email cannot be empty";
+        return res;
+      } else if (password.isEmpty) {
+        res = "Password cannot be empty";
+        return res;
+      } else if (username.isEmpty) {
+        res = "Username cannot be empty";
+        return res;
       }
     } on FirebaseAuthException catch (err) {
       if (err.code == 'invalid-email') {
@@ -56,15 +67,19 @@ class AuthMethods {
 
   Future<String> loginUser(
       {required String email, required String password}) async {
-    String res = "Some error occurred";
+    String res = "Email or password cannot be empty";
 
     try {
-      if (email.isNotEmpty || password.isNotEmpty) {
+      if (email.isNotEmpty && password.isNotEmpty) {
         await _auth.signInWithEmailAndPassword(
             email: email, password: password);
         res = "Success";
-      } else {
-        res = "Email or Password cannot be empty";
+      } else if (email.isEmpty) {
+        res = "Email cannot be empty";
+        return res;
+      } else if (password.isEmpty) {
+        res = "Password cannot be empty";
+        return res;
       }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
