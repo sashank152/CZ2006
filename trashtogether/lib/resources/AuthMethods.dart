@@ -24,6 +24,10 @@ class AuthMethods {
           username.isNotEmpty &&
           file != null) {
         //register user
+        if (password.length >= 16) {
+          res = "Password cannot be more than 16 characters long";
+          return res;
+        }
         UserCredential cred = await _auth.createUserWithEmailAndPassword(
             email: email, password: password);
 
