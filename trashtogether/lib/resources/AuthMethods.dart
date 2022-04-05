@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:trashtogether/resources/storageMethods.dart';
 import 'package:trashtogether/models/User.dart' as model;
+import 'package:trashtogether/Screens/verifyEmailScreen.dart';
 
 class AuthMethods {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -24,8 +25,18 @@ class AuthMethods {
           username.isNotEmpty &&
           file != null) {
         //register user
-        if (password.length >= 16) {
-          res = "Password cannot be more than 16 characters long";
+        if (password.length >= 16 || password.length <= 6) {
+          res = "Password must be between 6-16 characters";
+          return res;
+        }
+        String formatter = email.split('@')[0];
+        if (formatter.contains('.') ||
+            formatter.contains('@') ||
+            formatter.contains(',') ||
+            formatter.contains('/') ||
+            formatter.contains('\'') ||
+            formatter.contains(';')) {
+          res = "Invalid Email";
           return res;
         }
         UserCredential cred = await _auth.createUserWithEmailAndPassword(
