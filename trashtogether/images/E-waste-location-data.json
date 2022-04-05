@@ -1,0 +1,1552 @@
+{
+  "data": [
+    {
+      "coordinates": [103.743170436292, 1.33320021038331, 0],
+      "location": "50 JURONG GATEWAY ROAD, JEM, #04-30"
+    },
+    {
+      "coordinates": [103.944387987324, 1.35267231590699, 0],
+      "location": "4 TAMPINES CENTRAL 5"
+    },
+    {
+      "coordinates": [103.855923563242, 1.29981638982486, 0],
+      "location": "230 VICTORIA STREET"
+    },
+    {
+      "coordinates": [103.743170436292, 1.33320021038331, 0],
+      "location": "50 JURONG GATEWAY RD, JEM, #B1-21/22 & #B3-01"
+    },
+    {
+      "coordinates": [103.7467344968, 1.33489843717476, 0],
+      "location": "2 JURONG EAST STREET 21"
+    },
+    {
+      "coordinates": [103.740167234363, 1.33333039944934, 0],
+      "location": "2 JURONG EAST CENTRAL 1"
+    },
+    {
+      "coordinates": [103.700219203285, 1.33925339612415, 0],
+      "location": "602 JURONG WEST ST 65"
+    },
+    {
+      "coordinates": [103.744950384161, 1.38506835667563, 0],
+      "location": "21 CHOA CHU KANG AVE 4, WALKWAY BESIDE MCDONALD'S"
+    },
+    {
+      "coordinates": [103.841584210034, 1.27616698002633, 0],
+      "location": "101 CANTONMENT ROAD"
+    },
+    {
+      "coordinates": [103.81902706845, 1.26499758815146, 0],
+      "location": "1 HARBOURFRONT PLACE"
+    },
+    {
+      "coordinates": [103.818732565555, 1.26206336420704, 0],
+      "location": "1 MARITIME SQUARE"
+    },
+    {
+      "coordinates": [103.828004847991, 1.28630852981463, 0],
+      "location": "298 TIONG BAHRU ROAD"
+    },
+    {
+      "coordinates": [103.850204545922, 1.33493451709456, 0],
+      "location": "93 TOA PAYOH CENTRAL"
+    },
+    {
+      "coordinates": [103.859378979813, 1.33489037046643, 0],
+      "location": "1999 LORONG 8 TOA PAYOH"
+    },
+    {
+      "coordinates": [103.85470024903, 1.33627489206396, 0],
+      "location": "160 LORONG 6 TOA PAYOH"
+    },
+    {
+      "coordinates": [103.882894179307, 1.37514897825787, 0],
+      "location": "51 HOUGANG AVENUE 9"
+    },
+    {
+      "coordinates": [103.892622240184, 1.36475743233025, 0],
+      "location": "35 HOUGANG AVENUE 3"
+    },
+    {
+      "coordinates": [103.848399227484, 1.3692489128202, 0],
+      "location": "ANG MO KIO AVENUE 3, ANG MOH KIO HUB, #B1-58"
+    },
+    {
+      "coordinates": [103.8412861742, 1.36213756796576, 0],
+      "location": "SIN MING AVE"
+    },
+    {
+      "coordinates": [103.785688739235, 1.43600784517148, 0],
+      "location": "1 WOODLANDS SQUARE"
+    },
+    {
+      "coordinates": [103.905113592255, 1.30119130748691, 0],
+      "location": "80 MARINE PARADE ROAD, PARKWAY PARADE, #3-29"
+    },
+    {
+      "coordinates": [103.850487239152, 1.33166814039843, 0],
+      "location": "192 TOA PAYOH LORONG 4"
+    },
+    {
+      "coordinates": [103.847944283348, 1.37060311973576, 0],
+      "location": "710A ANG MO KIO AVE 8"
+    },
+    {
+      "coordinates": [103.7467344968, 1.33489843717476, 0],
+      "location": "2 JURONG EAST STREET 21, IMM, #2-23"
+    },
+    {
+      "coordinates": [103.821589254908, 1.2638958023183, 0],
+      "location": "1 HARBOURFRONT WALK, VIVOCITY, #2-34"
+    },
+    {
+      "coordinates": [103.953024503826, 1.34270618643901, 0],
+      "location": "3 SIMEI STREET 6, EASTPOINT MALL, #04-07"
+    },
+    {
+      "coordinates": [103.931999887749, 1.37210169627783, 0],
+      "location": "21 TAMPINES NORTH DRIVE 2, GIANT HYPERMART TAMPINES, #03-01"
+    },
+    {
+      "coordinates": [103.932360135904, 1.32496142341112, 0],
+      "location": "799 NEW UPPER CHANGI ROAD, BEDOK POINT, #B1-01/02, #B-16/2 AND #B1-K1/K14"
+    },
+    {
+      "coordinates": [103.763961852618, 1.38051732815914, 0],
+      "location": "1 JELEBU ROAD, BUKIT PANJANG PLAZA, #03-06"
+    },
+    {
+      "coordinates": [103.847607917674, 1.37285425440227, 0],
+      "location": "5 ANG MO KIO CENTRAL 3, DJITSUN MALL, #2-1"
+    },
+    {
+      "coordinates": [103.85934397868, 1.29296503959681, 0],
+      "location": "9 RAFFLES BOULEVARD, MILLENIA WALK, #02-27"
+    },
+    {
+      "coordinates": [103.746558072887, 1.39730190406931, 0],
+      "location": "21 CHOA CHU KANG NORTH 6, YEW TEE POINT, #B1-01"
+    },
+    {
+      "coordinates": [103.739371389964, 1.33375343199036, 0],
+      "location": "BLK 135 JURONG GATEWAY RD, #01-337"
+    },
+    {
+      "coordinates": [103.746847120427, 1.36650698454332, 0],
+      "location": "2 BUKIT BATOK WEST AVE 7, HOMETEAM NS BUKIT BATOK CLUBHOUSE, #01-10"
+    },
+    {
+      "coordinates": [103.749021980031, 1.35018915982967, 0],
+      "location": "1 BUKIT BATOK CENTRAL LINK, WEST MALL, #03-06 TO 09"
+    },
+    {
+      "coordinates": [103.742586017746, 1.33402528745454, 0],
+      "location": "3 GATEWAY DRIVE, WESTGATE, #B1-32"
+    },
+    {
+      "coordinates": [103.876152670397, 1.30222177114752, 0],
+      "location": "5 STADIUM WALK, KALLANG LEISURE PARK, #01-46-50"
+    },
+    {
+      "coordinates": [103.815828543116, 1.28525426592061, 0],
+      "location": "4000 JALAN BUKIT MERAH"
+    },
+    {
+      "coordinates": [103.77055880601, 1.37645074924612, 0],
+      "location": "8 PENDING ROAD"
+    },
+    {
+      "coordinates": [103.768153686645, 1.31881518814763, 0],
+      "location": "220 CLEMENTI AVENUE 4"
+    },
+    {
+      "coordinates": [103.789211186001, 1.31200940949362, 0],
+      "location": "170 GHIM MOH ROAD"
+    },
+    {
+      "coordinates": [103.764832077473, 1.30264555979077, 0],
+      "location": "2 CLEMENTI WEST STREET 2"
+    },
+    {
+      "coordinates": [103.737065915264, 1.33997285278881, 0],
+      "location": "90 BOON LAY WAY"
+    },
+    {
+      "coordinates": [103.798931949053, 1.27494101471276, 0],
+      "location": "10 PASIR PANJANG ROAD, CLUNY COURT"
+    },
+    {
+      "coordinates": [103.89659695323, 1.3164501683615, 0],
+      "location": "1 ENGKU AMAN TURN"
+    },
+    {
+      "coordinates": [103.949294393687, 1.34068473973667, 0],
+      "location": "2 SIMEI STREET 3, ADMIRALTY PLACE"
+    },
+    {
+      "coordinates": [103.863597858268, 1.30279521839327, 0],
+      "location": "385 BEACH ROAD, KAMPONG GLAM CC"
+    },
+    {
+      "coordinates": [103.808061968709, 1.31883225067726, 0],
+      "location": "4 QUEEN’S ROAD, FARRER GARDENS RC"
+    },
+    {
+      "coordinates": [103.887727364285, 1.35313871558187, 0],
+      "location": "116 HOUGANG AVENUE 1, PAYA LEBAR ZONE 5 RC, #01-1206"
+    },
+    {
+      "coordinates": [103.696638818729, 1.33689136709064, 0],
+      "location": "653A JURONG WEST ST 61, PIONEER ZONE 12 RN, #01-422"
+    },
+    {
+      "coordinates": [103.744727853367, 1.39491758447052, 0],
+      "location": "20 CHOA CHU KANG STREET 52, YEW TEE CC"
+    },
+    {
+      "coordinates": [103.785006866148, 1.43177102177052, 0],
+      "location": "353 WOODLANDS AVENUE 1, WOODGROVE CC"
+    },
+    {
+      "coordinates": [103.779746868505, 1.43351252898231, 0],
+      "location": "BLK 4 WOODLANDS STREET 12, #02-61"
+    },
+    {
+      "coordinates": [103.81095896399, 1.2927033928985, 0],
+      "location": "57 DAWSON RD, DAWSON PLACE"
+    },
+    {
+      "coordinates": [103.841152117124, 1.28738855750969, 0],
+      "location": "54 CHIN SWEE ROAD HDB-CENTRAL AREA, 54 CHIN SWEE RD"
+    },
+    {
+      "coordinates": [103.861311962893, 1.30880609288659, 0],
+      "location": "809 FRENCH ROAD, KITCHENER COMPLEX"
+    },
+    {
+      "coordinates": [103.843656770909, 1.32021099973819, 0],
+      "location": "238 THOMSON ROAD, NOVENA SQUARE"
+    },
+    {
+      "coordinates": [103.848326054144, 1.33214111914629, 0],
+      "location": "6 LORONG TOA PAYOH, HDB HUB"
+    },
+    {
+      "coordinates": [103.870318570635, 1.32188556778471, 0],
+      "location": "70 GEYLANG BAHRU, 70 GEYLANG BAHRU"
+    },
+    {
+      "coordinates": [103.865597002044, 1.33576029121741, 0],
+      "location": "121 POTONG PASIR AVENUE, HDB-POTONG PASIR"
+    },
+    {
+      "coordinates": [103.892550607124, 1.3186757503745, 0],
+      "location": "60 PAYA LEBAR RD, PAYA LEBAR SQUARE"
+    },
+    {
+      "coordinates": [103.964617781926, 1.36700053783377, 0],
+      "location": "259 PASIR RIS STREET 21, LOYANG POINT"
+    },
+    {
+      "coordinates": [103.942281486106, 1.37790945286479, 0],
+      "location": "623 ELIAS ROAD, ELIAS MALL"
+    },
+    {
+      "coordinates": [103.936272108833, 1.37930651729418, 0],
+      "location": "735 PASIR RIS STREET 72, PASIR RIS WEST PLAZA"
+    },
+    {
+      "coordinates": [103.901558027564, 1.38493202032929, 0],
+      "location": "118 RIVERVALE DRIVE, RIVERVALE PLAZA"
+    },
+    {
+      "coordinates": [103.778560470199, 1.33865676913061, 0],
+      "location": "1 JALAN ANAK BUKIT BUKIT TIMAH PLAZA, BUKIT TIMAH PLAZA"
+    },
+    {
+      "coordinates": [103.720268024233, 1.335042021408, 0],
+      "location": "399 YUNG SHENG ROAD, TAMAN JURONG SHOPPING CENTRE"
+    },
+    {
+      "coordinates": [103.69702008582, 1.34159107979646, 0],
+      "location": "638 JURONG WEST STREET 61, PIONEER MALL"
+    },
+    {
+      "coordinates": [103.697732094253, 1.34874357157007, 0],
+      "location": "762 JURONG WEST STREET 75, GEK POH SHOPPING CENTRE"
+    },
+    {
+      "coordinates": [103.770768312339, 1.38358044141429, 0],
+      "location": "445 FARJAR ROAD, FAJAR SHOPPING CENTRE"
+    },
+    {
+      "coordinates": [103.766170532015, 1.38529556520099, 0],
+      "location": "524A JELAPANG ROAD, GREENRIDGE SHOPPING CENTRE"
+    },
+    {
+      "coordinates": [103.747182456762, 1.3982771941105, 0],
+      "location": "624 CHOA CHU KANG STREET 62, YEW TEE SQUARE"
+    },
+    {
+      "coordinates": [103.798119771491, 1.44575077511561, 0],
+      "location": "768 WOODLANDS AVENUE 6, WOODLANDS MART"
+    },
+    {
+      "coordinates": [103.795136736247, 1.43767919710846, 0],
+      "location": "888 WOODLANDS DRIVE 50, 888 PLAZA"
+    },
+    {
+      "coordinates": [103.819543348907, 1.45384518348657, 0],
+      "location": "511 CANBERRA ROAD, SEMBAWANG MART"
+    },
+    {
+      "coordinates": [103.892724434212, 1.31752384126856, 0],
+      "location": "10 PAYA LEBAR ROAD, PAYA LEBAR QUARTER (PLQ)"
+    },
+    {
+      "coordinates": [103.900312365788, 1.38349233371644, 0],
+      "location": "110 RIVERVALE WALK, RIVERVALE COURT RC"
+    },
+    {
+      "coordinates": [103.905022045791, 1.38814105023846, 0],
+      "location": "135 RIVERVALE STREET, RIVERVALE SPRING RC, #01-730"
+    },
+    {
+      "coordinates": [103.905458978888, 1.39454067766739, 0],
+      "location": "188B RIVERVALE DRIVE, RIVERVALE VISTA RC, 01-1076"
+    },
+    {
+      "coordinates": [103.893923648496, 1.38831310758384, 0],
+      "location": "201B COMPASSVALE DRIVE, COMPASSVALE SOUTHGATE RC, #01-545"
+    },
+    {
+      "coordinates": [103.909660431254, 1.38949149935928, 0],
+      "location": "180C RIVERVALE CRESCENT, RIVERVALE ARC RC, #01-367"
+    },
+    {
+      "coordinates": [103.8975474119, 1.38681828916719, 0],
+      "location": "206C COMPASSVALE LANE, COMPASSVALE VILLA RC"
+    },
+    {
+      "coordinates": [103.886665684716, 1.39712791773438, 0],
+      "location": "59 ANCHORVALE ROAD, ANCHORVALE COMMUNITY CLUB"
+    },
+    {
+      "coordinates": [103.907288602075, 1.40328429076968, 0],
+      "location": "602 PUNGGOL CENTRAL, PUNGGOL VISTA CC"
+    },
+    {
+      "coordinates": [103.908973751235, 1.39740420680146, 0],
+      "location": "176C EDGEFIELD PLAINS, PUNGGOL OASIS RC, #01-569"
+    },
+    {
+      "coordinates": [103.902910898023, 1.39877826808137, 0],
+      "location": "204A  204A PUNGGOL FIELD, PUNGGOL CLOVER RN, #01-288"
+    },
+    {
+      "coordinates": [103.89566486383, 1.40451590068484, 0],
+      "location": "259C PUNGGOL FIELD, PUNGGOL WEST CC"
+    },
+    {
+      "coordinates": [103.898358930385, 1.40331377225975, 0],
+      "location": "268D PUNGGOL FIELD, PUNGGOL SAPPHIRALD RN, #01-173"
+    },
+    {
+      "coordinates": [103.881623077407, 1.3843342640345, 0],
+      "location": "991 BUANGKOK LINK, LEVEL 1"
+    },
+    {
+      "coordinates": [103.698192624513, 1.33838768620432, 0],
+      "location": "1 JURONG WEST ST 71, SECURITY GUARD POST"
+    },
+    {
+      "coordinates": [103.793416336246, 1.43084006633629, 0],
+      "location": "548 WOODLANDS DRIVE 44, LEVEL 1"
+    },
+    {
+      "coordinates": [103.830345370073, 1.44349544002733, 0],
+      "location": "133 CANBERRA VIEW, LEVEL 1"
+    },
+    {
+      "coordinates": [103.776679540457, 1.29125963881342, 0],
+      "location": "30 HENG MUI KENG TERRACE, LEVEL 1"
+    },
+    {
+      "coordinates": [103.893400329176, 1.31495729637934, 0],
+      "location": "810 GEYLANG RD, LEVEL 1"
+    },
+    {
+      "coordinates": [103.903841964129, 1.37830875828283, 0],
+      "location": "477A UPPER SERANGOON VIEW, LEVEL 1"
+    },
+    {
+      "coordinates": [103.834499527161, 1.36891616406036, 0],
+      "location": "260 ANG MO KIO STREET 21, #01-06"
+    },
+    {
+      "coordinates": [103.901186083679, 1.41090728243885, 0],
+      "location": "312B SUMANG LINK, #01-171"
+    },
+    {
+      "coordinates": [103.852768332387, 1.29376027875418, 0],
+      "location": "252 NORTH BRIDGE RD"
+    },
+    {
+      "coordinates": [103.835776496688, 1.42969847969486, 0],
+      "location": "930 YISHUN AVE 2, #03-90/10"
+    },
+    {
+      "coordinates": [103.852768332387, 1.29376027875418, 0],
+      "location": "252 NORTH BRIDGE RD, #03-22/23"
+    },
+    {
+      "coordinates": [103.842393168675, 1.27559619005356, 0],
+      "location": "TANJONG PAGAR PLAZA, #01-01"
+    },
+    {
+      "coordinates": [103.817642874205, 1.28311949644729, 0],
+      "location": "166 BUKIT MERAH CENTRAL, #01-3531 & 02-3531"
+    },
+    {
+      "coordinates": [103.81095896399, 1.2927033928985, 0],
+      "location": "BLK 57 DAWSON RD, DAWSON PLACE, #01-07"
+    },
+    {
+      "coordinates": [103.82679375163, 1.2897781328001, 0],
+      "location": "BLK 50 HAVELOCK RD, BLK 50 HAVELOCK RD, #01-755"
+    },
+    {
+      "coordinates": [103.801126950046, 1.27367657754603, 0],
+      "location": "460 ALEXANDRA RD, 460 ALEXANDRA RD, #01-09 AND #01-16"
+    },
+    {
+      "coordinates": [103.784084015695, 1.2927743133923, 0],
+      "location": "1 LOWER KENT RIDGE RD, NUH MEDICAL CENTRE, #02-16"
+    },
+    {
+      "coordinates": [103.913464113125, 1.39360624159956, 0],
+      "location": "80 PUNGGOL FIELD, PUNGGOL 21 CC"
+    },
+    {
+      "coordinates": [103.823852800985, 1.30484343221316, 0],
+      "location": "163 TANGLIN ROAD, TANGLIN MALL, #B1-01"
+    },
+    {
+      "coordinates": [103.837684358423, 1.30138509490103, 0],
+      "location": "313 ORCHARD ROAD, 313 SOMERSET, #02-28"
+    },
+    {
+      "coordinates": [103.833189600965, 1.30369890150462, 0],
+      "location": "435 ORCHARD ROAD, WISMA ATRIA, #03-01"
+    },
+    {
+      "coordinates": [103.87170454945, 1.35043817177432, 0],
+      "location": "23 SERANGOON CENTRAL, NEX, #03-21"
+    },
+    {
+      "coordinates": [103.845047580881, 1.30074770847155, 0],
+      "location": "68 ORCHARD ROAD, STAHUB @ PLAZA SING, #1-36"
+    },
+    {
+      "coordinates": [103.944387987324, 1.35267231590699, 0],
+      "location": "4 TAMPINES CENTRAL 5, STARHUB @ TAMPINES, #2-27"
+    },
+    {
+      "coordinates": [103.87170454945, 1.35043817177432, 0],
+      "location": "23 SERANGOON CENTRAL, NEX, #B1-56"
+    },
+    {
+      "coordinates": [103.7467344968, 1.33489843717476, 0],
+      "location": "2 JURONG EAST STREET 21, IMM, #01-53"
+    },
+    {
+      "coordinates": [103.749021980031, 1.35018915982967, 0],
+      "location": "1 BUKIT BATOK CENTRAL LINK, WEST MALL, #01-16"
+    },
+    {
+      "coordinates": [103.850982351781, 1.28433993485695, 0],
+      "location": "1 RAFFLES PLACE, ONE RAFFLES PLACE, #02-25"
+    },
+    {
+      "coordinates": [103.835240310126, 1.30372321372467, 0],
+      "location": "290 ORCHARD ROAD, THE PARAGON, #04-31"
+    },
+    {
+      "coordinates": [103.944387987324, 1.35267231590699, 0],
+      "location": "4 TAMPINES CENTRAL 5, TAMPINES MALL, #03-01"
+    },
+    {
+      "coordinates": [103.785688739235, 1.43600784517148, 0],
+      "location": "1 WOODLANDS SQUARE, CAUSEWAY POINT, #03-01"
+    },
+    {
+      "coordinates": [103.854867046362, 1.29846962637, 0],
+      "location": "80 MIDDLE ROAD, BUGIS JUNCTION, #01-81"
+    },
+    {
+      "coordinates": [103.905113592255, 1.30119130748691, 0],
+      "location": "80 MARINE PARADE ROAD, PARKWAY PARADE, #02-24"
+    },
+    {
+      "coordinates": [103.787567251574, 1.29901131909216, 0],
+      "location": "3 FUSIONOPOLIS WAY, BASEMENT 2 CONNEXIS"
+    },
+    {
+      "coordinates": [103.851185944181, 1.29946332963088, 0],
+      "location": "80 BENCOOLEN STREET, LEVEL 1 WING A"
+    },
+    {
+      "coordinates": [103.866775484716, 1.29499327834417, 0],
+      "location": "11 RHU CROSS"
+    },
+    {
+      "coordinates": [103.727299471215, 1.33935955388184, 0],
+      "location": "100 YUAN CHING RD"
+    },
+    {
+      "coordinates": [103.702315285031, 1.34446132877907, 0],
+      "location": "674A, JURONG WEST STREET 65, #01-66"
+    },
+    {
+      "coordinates": [103.710255719064, 1.350218607854, 0],
+      "location": "218D BOON LAY AVE #01-309"
+    },
+    {
+      "coordinates": [103.882688424945, 1.30704305553309, 0],
+      "location": "5 PINE CLOSE, #01-141"
+    },
+    {
+      "coordinates": [103.841975318466, 1.3194895845632, 0],
+      "location": "55 NEWTON RD, LEVEL 2"
+    },
+    {
+      "coordinates": [103.839419161507, 1.3336652631755, 0],
+      "location": "512 THOMSON ROAD MSF BUILDING LOBBY"
+    },
+    {
+      "coordinates": [103.942269412202, 1.32342985595863, 0],
+      "location": "51 NEW UPPER CHANGI ROAD, #01-1500"
+    },
+    {
+      "coordinates": [103.942732315687, 1.32041601686604, 0],
+      "location": "71 BEDOK SOUTH ROAD, #01-250"
+    },
+    {
+      "coordinates": [103.944965235932, 1.3196396832799, 0],
+      "location": "167 BEDOK SOUTH AVE 3, #01-501"
+    },
+    {
+      "coordinates": [103.844697085395, 1.28499882771298, 0],
+      "location": "133 NEW BRIDGE ROAD, #06-01"
+    },
+    {
+      "coordinates": [103.844830875826, 1.3353827124599, 0],
+      "location": "200 LORONG 2 TOA PAYOH"
+    },
+    {
+      "coordinates": [103.948701743616, 1.35641019022249, 0],
+      "location": "232 TAMPINES STREET 21, #01-639"
+    },
+    {
+      "coordinates": [103.757451264505, 1.31641320903159, 0],
+      "location": "1 WEST COAST DRIVE, #01-111"
+    },
+    {
+      "coordinates": [103.896058169727, 1.32985965145243, 0],
+      "location": "3024A UBI RD 1"
+    },
+    {
+      "coordinates": [103.949900396416, 1.33674833674262, 0],
+      "location": "BEDOK INDUSTRIAL PARK E, PAVILION"
+    },
+    {
+      "coordinates": [103.817642874205, 1.28311949644729, 0],
+      "location": "166 BUKIT MERAH CENTRAL, #03-3527"
+    },
+    {
+      "coordinates": [103.825328122484, 1.27337412903551, 0],
+      "location": "108 BUKIT PURMEI ROAD, #01-129"
+    },
+    {
+      "coordinates": [103.818863113389, 1.28331721051266, 0],
+      "location": "168 JALAN BUKIT MARAH, SURBANA ONE, LEVEL 1"
+    },
+    {
+      "coordinates": [103.810031318703, 1.28112226404962, 0],
+      "location": "BLK 108 DEPOT RD, DEPOT HEIGHTS SHOPPING CENTRE, #01-01"
+    },
+    {
+      "coordinates": [103.792619417011, 1.30925871460611, 0],
+      "location": "BLK 36 HOLLAND DR, BLK 36 HOLLAND DR, #01-03/04/05"
+    },
+    {
+      "coordinates": [103.781697209464, 1.30476356255085, 0],
+      "location": "BLK 28 DOVER CRESCENT, BLK 28 DOVER CRESCENT, #01-83"
+    },
+    {
+      "coordinates": [103.765476504358, 1.31248108236843, 0],
+      "location": "BLK 451 CLEMENTI AVE 3, BLK 451 AVE 3, #01-307"
+    },
+    {
+      "coordinates": [103.720268024233, 1.335042021408, 0],
+      "location": "BLK 399 YUNG SHENG RD, TAMAN JURONG SHOPPING CENTRE, #01-35"
+    },
+    {
+      "coordinates": [103.722452883915, 1.33205938361655, 0],
+      "location": "BLK 63/66 YUNG KUANG RD, BLK 66 YUNG KANG RD, #01-119 AND #02-119"
+    },
+    {
+      "coordinates": [103.712387719568, 1.34639604067888, 0],
+      "location": "BLK 221 BOON LAY PLACE, BOON LAY SHOPPING CENTRE, #02-200"
+    },
+    {
+      "coordinates": [103.70646088413, 1.3398301525794, 0],
+      "location": "NO. 1 JURONG WEST CENTRAL 2, JURONG POINT 1, #B1-09"
+    },
+    {
+      "coordinates": [103.759080937631, 1.31188595555903, 0],
+      "location": "BLK 502 WEST COAST DR, BLK 502 WEST COAST DR, #01-41"
+    },
+    {
+      "coordinates": [103.76274117629, 1.37834971260866, 0],
+      "location": "17 PETIR RD, HILLION MALL, #B2-67"
+    },
+    {
+      "coordinates": [103.744950384161, 1.38506835667563, 0],
+      "location": "21 CHOA CHU KANG AVE 4, LOT 1 SHOPPERS' MALL, #B1-03"
+    },
+    {
+      "coordinates": [103.752112715995, 1.37502493396044, 0],
+      "location": "1 CHOA CHU KANG GROVE, ITE COLLEGE WEST, BLOCK 1, LEVEL 3 FOOD CANOPY"
+    },
+    {
+      "coordinates": [103.944387987324, 1.35267231590699, 0],
+      "location": "4 TAMPINES CENTRAL 5, TAMPINES MALL, #03-16/16A"
+    },
+    {
+      "coordinates": [103.93742559472, 1.36113645470954, 0],
+      "location": "602A TAMPINES AVENUE 9, #01-01"
+    },
+    {
+      "coordinates": [103.848430082687, 1.35017242685302, 0],
+      "location": "9 BISHAN PLACE, JUNCTION 8 SHOPPING CENTRE, #3-2"
+    },
+    {
+      "coordinates": [103.790191441877, 1.27459998107058, 0],
+      "location": "3 HARBOUR DRIVE, PASIR PANJANG TERMINAL BUILDING 3"
+    },
+    {
+      "coordinates": [103.963653904182, 1.33491977308775, 0],
+      "location": "8 CHANGI BUSINESS PARK AVE 1, #01-51 &, #02-51"
+    },
+    {
+      "coordinates": [103.798507625095, 1.43109806887589, 0],
+      "location": "BLK 573 WOODLANDS DRIVE 16, #02-01"
+    },
+    {
+      "coordinates": [103.776023346965, 1.4351589456523, 0],
+      "location": "BLK 182 WOODLANDS ST 13, #01-01"
+    },
+    {
+      "coordinates": [103.786049387238, 1.30811885974155, 0],
+      "location": "BLK 25 GHIM MOH LINK, #01-11"
+    },
+    {
+      "coordinates": [103.843413235622, 1.37018859803198, 0],
+      "location": "BLK 122 ANG MO KIO AVE 3, #01-1753"
+    },
+    {
+      "coordinates": [103.83674063165, 1.36754924240467, 0],
+      "location": "BLK 233 ANG MO KIO AVE 3, #01-1168"
+    },
+    {
+      "coordinates": [103.771350564245, 1.31427859810327, 0],
+      "location": "BLK 352 CLEMENTI AVE 2, #01-91"
+    },
+    {
+      "coordinates": [103.715759515182, 1.35239357898915, 0],
+      "location": "BLK 544 JURONG WEST ST 42, #01-97"
+    },
+    {
+      "coordinates": [103.754071399254, 1.37829768231958, 0],
+      "location": "BLK 18 TECK WHYE LANE, #01-95"
+    },
+    {
+      "coordinates": [103.743698108315, 1.34737179771512, 0],
+      "location": "BLK 154A BUKIT BATOK WEST AVE 8, #01-01"
+    },
+    {
+      "coordinates": [103.769575393265, 1.38824020983746, 0],
+      "location": "BLK 547 SEGAR ROAD, #01-06"
+    },
+    {
+      "coordinates": [103.771029605045, 1.38400582300801, 0],
+      "location": "BLK 446 FAJAR RD, #01-01"
+    },
+    {
+      "coordinates": [103.739303113535, 1.35572307969423, 0],
+      "location": "BLK 440 BUKIT BATOK WEST AVE 8, #01-10"
+    },
+    {
+      "coordinates": [103.755394621037, 1.34447135579337, 0],
+      "location": "BLK 292 BUKIT BATOK EAST AVENUE 6, #01-02"
+    },
+    {
+      "coordinates": [103.775164786038, 1.44315120177467, 0],
+      "location": "BLK 202 MARSILING DRIVE, #01-138"
+    },
+    {
+      "coordinates": [103.760041590511, 1.38060512479732, 0],
+      "location": "NO.1 WOODLANDS ROADS, #01-07"
+    },
+    {
+      "coordinates": [103.83605365678, 1.35184498416505, 0],
+      "location": "200 UPP THOMSON RD, #B1-01"
+    },
+    {
+      "coordinates": [103.809758599549, 1.29531965769669, 0],
+      "location": "BLK 85 DAWSON ROAD, #01-01"
+    },
+    {
+      "coordinates": [103.768637303114, 1.30973330594899, 0],
+      "location": "BLK 420A CLEMENTI AVE 1, #01-01"
+    },
+    {
+      "coordinates": [103.962389303195, 1.33432515600981, 0],
+      "location": "5 CHANGI BUSINESS PARK CENTRAL 1, CHANGI CITY POINT, #01-56"
+    },
+    {
+      "coordinates": [103.864574202325, 1.37189393393221, 0],
+      "location": "8 ANG MO KIO INDUSTRIAL PARK 2"
+    },
+    {
+      "coordinates": [103.749456841487, 1.35905888839505, 0],
+      "location": "30 BUKIT BATOK STREET 31, HONG KAH NORTH CC"
+    },
+    {
+      "coordinates": [103.76274117629, 1.37834971260866, 0],
+      "location": "17 PETIR ROAD, HILLION MALL, #B1-65"
+    },
+    {
+      "coordinates": [103.74601574229, 1.41286385690526, 0],
+      "location": "71 SUNGEI KADUT DRIVE, GAIN CITY MEGASTORE @ SUNGEI KADUT"
+    },
+    {
+      "coordinates": [103.901988174009, 1.40653610720599, 0],
+      "location": "83 PUNGGOL CENTRAL, WATERWAY POINT"
+    },
+    {
+      "coordinates": [103.929182078245, 1.32479360710739, 0],
+      "location": "311 NEW UPPER CHANGI ROAD, BEDOK MALL, #B1-01/43/44"
+    },
+    {
+      "coordinates": [103.953024503826, 1.34270618643901, 0],
+      "location": "3 SIMEI STREET 6, EASTPOINT MALL, #B1-08"
+    },
+    {
+      "coordinates": [103.879300024096, 1.37584997338503, 0],
+      "location": "1 HOUGANG ST 91, HOUGANG 1, #2-01"
+    },
+    {
+      "coordinates": [103.89366161203, 1.37231185642959, 0],
+      "location": "90 HOUGANG AVENUE 10, HOUGANG MALL, #02-13"
+    },
+    {
+      "coordinates": [103.87170454945, 1.35043817177432, 0],
+      "location": "23 SERANGOON CENTRAL, NEX MALL, #03-42"
+    },
+    {
+      "coordinates": [103.764266389757, 1.36196724402422, 0],
+      "location": "1 HILLVIEW RISE, HILLVIEW CC"
+    },
+    {
+      "coordinates": [103.872750711332, 1.30384326764684, 0],
+      "location": "1 STADIUM PLACE LEVEL 1, WAVE MALL, #01-29"
+    },
+    {
+      "coordinates": [103.842561025611, 1.29225958039889, 0],
+      "location": "81 CLEMENCEAU AVENUE, UE SQUARE, #02-15"
+    },
+    {
+      "coordinates": [103.843656770909, 1.32021099973819, 0],
+      "location": "238 THOMSON ROAD, NOVENA SQUARE, #01-28"
+    },
+    {
+      "coordinates": [103.845047580881, 1.30074770847155, 0],
+      "location": "68 ORCHARD ROAD, PLAZA SINGAPURA, #4-12"
+    },
+    {
+      "coordinates": [103.819462104528, 1.44822653184262, 0],
+      "location": "30 SEMBAWANG DRIVE, SUN PLAZA, #2-06"
+    },
+    {
+      "coordinates": [103.785688739235, 1.43600784517148, 0],
+      "location": "1 WOODLANDS SQUARE, CAUSEWAY POINT, #04-19/20"
+    },
+    {
+      "coordinates": [103.849796103257, 1.3319945583363, 0],
+      "location": "460 TOA PAYOH LORONG 6"
+    },
+    {
+      "coordinates": [103.845765158161, 1.37343368369214, 0],
+      "location": "730 ANG MO KIO AVE 6"
+    },
+    {
+      "coordinates": [103.87170454945, 1.35043817177432, 0],
+      "location": "23 SERANGOON CENTRAL, NEX MALL, #02-49/50"
+    },
+    {
+      "coordinates": [103.933805897843, 1.37362335947781, 0],
+      "location": "50 TAMPINES NORTH DRIVE 2, COURTS MEGASTORE"
+    },
+    {
+      "coordinates": [103.848399227484, 1.3692489128202, 0],
+      "location": "53 ANG MO KIO AVE 3, ANG MO KIO HUB, #B2-40"
+    },
+    {
+      "coordinates": [103.849984794935, 1.29124400033468, 0],
+      "location": "107 NORTH BRIDGE ROAD, FUNAN MALL, #03-19/20"
+    },
+    {
+      "coordinates": [103.805032356604, 1.28243134568209, 0],
+      "location": "1 DEPOT CLOSE, HP ENTERPRISE"
+    },
+    {
+      "coordinates": [103.843463185977, 1.31733462987407, 0],
+      "location": "101 THOMSON ROAD, UNITED SQUARE, #B1-56D/E"
+    },
+    {
+      "coordinates": [103.832409180973, 1.44885564521184, 0],
+      "location": "105 CANBERRA ST, EAST BROOK @ CANBERRA, #02-05"
+    },
+    {
+      "coordinates": [103.80130510766, 1.29915022797049, 0],
+      "location": "365 COMMONWEALTH AVE"
+    },
+    {
+      "coordinates": [103.81444834816, 1.28978711891653, 0],
+      "location": "400 LENGKOK BAHRU"
+    },
+    {
+      "coordinates": [103.70646088413, 1.3398301525794, 0],
+      "location": "1 JURONG WEST CENTRAL, JURONG POINT, #02-05"
+    },
+    {
+      "coordinates": [103.89366161203, 1.37231185642959, 0],
+      "location": "90 HOUGANG AVENUE 10, HOUGANG MALL, #04-15"
+    },
+    {
+      "coordinates": [103.70646088413, 1.3398301525794, 0],
+      "location": "1 JURONG WEST CENTRAL 2, JURONG POINT, #03-37"
+    },
+    {
+      "coordinates": [103.876067657689, 1.39139305815613, 0],
+      "location": "33 SENGKANG WEST AVE, SELETAR MALL, #03-25"
+    },
+    {
+      "coordinates": [103.839759027803, 1.30197836640112, 0],
+      "location": "176 ORCHARD ROAD, THE CENTREPOINT, #03-31"
+    },
+    {
+      "coordinates": [103.87170454945, 1.35043817177432, 0],
+      "location": "23 SERANGOON CENTRAL, NEX MALL, #03-33/34"
+    },
+    {
+      "coordinates": [103.83840640501, 1.29897549945424, 0],
+      "location": "31B EXETER ROAD, COMCENTRE"
+    },
+    {
+      "coordinates": [103.763961852618, 1.38051732815914, 0],
+      "location": "1 JELEBU ROAD, BUKIT PANJANG PLAZA, #04-03"
+    },
+    {
+      "coordinates": [103.807875435609, 1.27486265663736, 0],
+      "location": "450 TELOK BLANGAH STREET 31, TELOK BLANGAH CC"
+    },
+    {
+      "coordinates": [103.779773956451, 1.29546718054057, 0],
+      "location": "27 SCIENCE DRIVE 1, KENT RIDGE CAMPUS, OUTSIDE LT27 AND LT29 STUDENT SPACE, LEVEL 1"
+    },
+    {
+      "coordinates": [103.773151759339, 1.29672886339029, 0],
+      "location": "12 KENT RIDGE CRES, KENT RIDGE CAMPUS, CENTRAL LIBRARY FORUM SPACE, LEVEL 1"
+    },
+    {
+      "coordinates": [103.772396246249, 1.30477687700985, 0],
+      "location": "2 COLLEGE AVE WEST, UTOWN - STEPHEN RIADY CENTRE, LEVEL 1 IN FRONT OF WAACOW RESTAURANT"
+    },
+    {
+      "coordinates": [103.856979169641, 1.32463959408329, 0],
+      "location": "300 WHAMPOA DRIVE"
+    },
+    {
+      "coordinates": [103.86703683934, 1.33253591154285, 0],
+      "location": "6 POTONG PASIR AVENUE 2"
+    },
+    {
+      "coordinates": [103.931620621577, 1.32698498848449, 0],
+      "location": "11 BEDOK NORTH STREET 1, MAIN ATRIUM"
+    },
+    {
+      "coordinates": [103.939683594446, 1.35349615471813, 0],
+      "location": "1 TAMPINES WALK"
+    },
+    {
+      "coordinates": [103.746377198218, 1.32519950719568, 0],
+      "location": "25 INTERNATIONAL BUSINESS PARK"
+    },
+    {
+      "coordinates": [103.854297426525, 1.27910566824918, 0],
+      "location": "12 MARINA BOULEVARD"
+    },
+    {
+      "coordinates": [103.853369669154, 1.28023825346251, 0],
+      "location": "8A MARINA BOULEVARD, #B2-10"
+    },
+    {
+      "coordinates": [103.846878912631, 1.28351521183249, 0],
+      "location": "18 CROSS STREET"
+    },
+    {
+      "coordinates": [103.851677108516, 1.28089477091411, 0],
+      "location": "1 RAFFLES QUAY, #B2"
+    },
+    {
+      "coordinates": [103.743170436292, 1.33320021038331, 0],
+      "location": "50 JURONG GATEWAY ROAD, JEM, #04-01"
+    },
+    {
+      "coordinates": [103.805489778956, 1.44679887813048, 0],
+      "location": "BLK 785E WOODLANDS RISE, #01-01"
+    },
+    {
+      "coordinates": [103.790602762447, 1.44479629224386, 0],
+      "location": "876 WOODLANDS STREET 83, WOODLANDS ZONE 3 RN"
+    },
+    {
+      "coordinates": [103.788235404817, 1.43973033862036, 0],
+      "location": "1 WOODLANDS STREET 81, WOODLANDS CC"
+    },
+    {
+      "coordinates": [103.774811855067, 1.42952981919595, 0],
+      "location": "1 WOODLANDS STREET 31, FUCHUN CC"
+    },
+    {
+      "coordinates": [103.802610984283, 1.43904160690114, 0],
+      "location": "31 WOODLANDS AVENUE 6, WOODLANDS GALAXY CC"
+    },
+    {
+      "coordinates": [103.792240772323, 1.42749277602918, 0],
+      "location": "120 WOODLANDS AVENUE 1, ACE THE PLACE CC"
+    },
+    {
+      "coordinates": [103.836092102185, 1.42803584532257, 0],
+      "location": "1 NORTHPOINT DRIVE NEE SOON CENTRAL COMMUNITY CLUB, NEE SOON CENTRAL CC"
+    },
+    {
+      "coordinates": [103.834693130803, 1.4151749664221, 0],
+      "location": "30 YISHUN STREET 81, NEE SOON SOUTH CC"
+    },
+    {
+      "coordinates": [103.838488083545, 1.43102087212489, 0],
+      "location": "1 YISHUN AVENUE 9, NEE SOON EAST CC"
+    },
+    {
+      "coordinates": [103.9095452826, 1.30482859822658, 0],
+      "location": "278 MARINE PARADE ROAD, MARINE PARADE CC"
+    },
+    {
+      "coordinates": [103.954985037641, 1.33455404275229, 0],
+      "location": "10 SIMEI AVE, ITE COLLEGE EAST, #B1-14"
+    },
+    {
+      "coordinates": [103.928839989349, 1.34793947802841, 0],
+      "location": "21 TAMPINES AVENUE 1, TEMASEK POLYTECHHIC"
+    },
+    {
+      "coordinates": [103.857675497949, 1.29487904117328, 0],
+      "location": "3 TEMASEK BOULEVARD, SUNTEC CITY MALL, #01-634"
+    },
+    {
+      "coordinates": [103.920979982361, 1.32315929186444, 0],
+      "location": "750B CHAI CHEE ROAD #01-01 TO 06, TO 12, #02-02 TO 06 BUSINESS PARK, #01-09"
+    },
+    {
+      "coordinates": [103.845703220386, 1.27573568080889, 0],
+      "location": "10 ANSON ROAD, INTERNATIONAL PLAZA, #36-05"
+    },
+    {
+      "coordinates": [103.780125253594, 1.3010087280189, 0],
+      "location": "10 DOVER DRIVE, SIT @ DOVER"
+    },
+    {
+      "coordinates": [103.852875624824, 1.30302298258031, 0],
+      "location": "1 ROCHOR CANAL RD, SIM LIM SQUARE"
+    },
+    {
+      "coordinates": [103.847789789234, 1.29918373003642, 0],
+      "location": "2 HANDY RD, THE CATHAY"
+    },
+    {
+      "coordinates": [103.856411986641, 1.37789203173292, 0],
+      "location": "2 ANG MO KIO DRIVE"
+    },
+    {
+      "coordinates": [103.785840623813, 1.31756196654772, 0],
+      "location": "293 HOLLAND ROAD, JELITA SHOPPING CENTRE, #01-01"
+    },
+    {
+      "coordinates": [103.843463185977, 1.31733462987407, 0],
+      "location": "101 THOMSON ROAD, UNITED SQUARE, #B1-29"
+    },
+    {
+      "coordinates": [103.855411182582, 1.299112870967, 0],
+      "location": "230 VICTORIA STREET, BUGIS JUNCTION, #B1-17"
+    },
+    {
+      "coordinates": [103.795692355521, 1.33081740087425, 0],
+      "location": "1 FIFTH AVENUE, GUTHRIE HOUSE, #01-05"
+    },
+    {
+      "coordinates": [103.852768332387, 1.29376027875418, 0],
+      "location": "1 STAMFORD ROAD, RAFFLES CITY SHOPPING CENTRE, #B1-01"
+    },
+    {
+      "coordinates": [103.814245550689, 1.32257316960795, 0],
+      "location": "501 BUKIT TIMAH ROAD, CLUNY COURT, #01-02"
+    },
+    {
+      "coordinates": [103.765284520206, 1.30358268148237, 0],
+      "location": "154 WEST COAST ROAD, WEST COAST PLAZA, #B1-19"
+    },
+    {
+      "coordinates": [103.83175791999, 1.29380234644511, 0],
+      "location": "1 KIM SENG PROMENADE, GREAT WORLD CITY, #B1-18"
+    },
+    {
+      "coordinates": [103.788214531337, 1.3068488176344, 0],
+      "location": "1 VISTA EXCHANGE GREEN, THE STAR VISTA, #B1-02"
+    },
+    {
+      "coordinates": [103.764172923137, 1.36267450617912, 0],
+      "location": "4 HILLVIEW RISE, HILLVIEW MARKET PLACE, #02-07"
+    },
+    {
+      "coordinates": [103.864101648717, 1.30974241289377, 0],
+      "location": "12  KALLANG AVE, APERIA, #01-47"
+    },
+    {
+      "coordinates": [103.894980032554, 1.39209415018227, 0],
+      "location": "1 SENGKANG SQUARE, COMPASS ONE, #B1-25"
+    },
+    {
+      "coordinates": [103.787404060926, 1.29929405573076, 0],
+      "location": "1 FUSIONOPOLIS WAY, ONE NORTH, #B2-03"
+    },
+    {
+      "coordinates": [103.835776496688, 1.42969847969486, 0],
+      "location": "930 YISHUN AVENUE 2, NORTHPOINT CITY, SOUTH WING, #B1-136/138"
+    },
+    {
+      "coordinates": [103.821589254908, 1.2638958023183, 0],
+      "location": "1 HARBOURFRONT WALK, VIVOCITY, #2-07"
+    },
+    {
+      "coordinates": [103.821589254908, 1.2638958023183, 0],
+      "location": "1 HARBOURFRONT WALK, VIVOCITY, #B2-23"
+    },
+    {
+      "coordinates": [103.764248205662, 1.31485321802259, 0],
+      "location": "3155 COMMONWEALTH AVENUE WEST, THE CLEMENTI MALL, #04-46/47/48/49"
+    },
+    {
+      "coordinates": [103.783228728956, 1.44627224974557, 0],
+      "location": "9 WOODLANDS AVENUE 9, REPUBLIC POLYTECHNIC"
+    },
+    {
+      "coordinates": [103.841236459776, 1.41799925556566, 0],
+      "location": "598 YISHUN RING RD, WISTERIA MALL"
+    },
+    {
+      "coordinates": [103.913195748836, 1.40287845319493, 0],
+      "location": "681 PUNGGOL DRIVE, OASIS TERRACES"
+    },
+    {
+      "coordinates": [103.849984794935, 1.29124400033468, 0],
+      "location": "107 NORTH BRIDGE ROAD, FUNAN, #03-01"
+    },
+    {
+      "coordinates": [103.83848662393, 1.30185487652123, 0],
+      "location": "228 ORCHARD ROAD, COURTS ORCHARD"
+    },
+    {
+      "coordinates": [103.774321072771, 1.34449154991689, 0],
+      "location": "205 UPPER BUKIT TIMAH ROAD, SIM LIAN BUILDING"
+    },
+    {
+      "coordinates": [103.765476504358, 1.31248108236843, 0],
+      "location": "451 CLEMENTI AVE 3, COURTS CLEMENTI, #01-309"
+    },
+    {
+      "coordinates": [103.744950384161, 1.38506835667563, 0],
+      "location": "21 CHOA CHU KANG AVE 4, LOT ONE, #03-01"
+    },
+    {
+      "coordinates": [103.857629113441, 1.28332249304312, 0],
+      "location": "2 BAYFRONT AVENUE, MBS, B2-06"
+    },
+    {
+      "coordinates": [103.836202012782, 1.30310525131104, 0],
+      "location": "270 ORCHARD ROAD, APPLE ORCHARD"
+    },
+    {
+      "coordinates": [103.989077555194, 1.36034099671656, 0],
+      "location": "78 AIRPORT BOULEVARD, JEWEL, #02-234"
+    },
+    {
+      "coordinates": [103.752527098063, 1.3811166761303, 0],
+      "location": "146 TECK WHYE LANE"
+    },
+    {
+      "coordinates": [103.852128172968, 1.28385698132703, 0],
+      "location": "24 RAFFLES PLACE, CLIFFORD CENTRE"
+    },
+    {
+      "coordinates": [103.796998851606, 1.43542608539826, 0],
+      "location": "611 WOODLANDS RING ROAD, WOODLANDS ZONE 7 RN"
+    },
+    {
+      "coordinates": [103.803192516442, 1.43671737846592, 0],
+      "location": "638 WOODLANDS RING ROAD, WOODLANDS ZONE 8 RN"
+    },
+    {
+      "coordinates": [103.799117869578, 1.43698595559977, 0],
+      "location": "656 WOODLANDS RING ROAD, WOODLANDS ZONE 9 RN"
+    },
+    {
+      "coordinates": [103.793474578196, 1.44330259673776, 0],
+      "location": "846 WOODLANDS AVENUE 4, WOODLANDS ZONE 2 RN"
+    },
+    {
+      "coordinates": [103.795048911761, 1.43995507442934, 0],
+      "location": "862 WOODLANDS STREET 83, WOODLANDS ZONE 4 RN, #01-184"
+    },
+    {
+      "coordinates": [103.826935084287, 1.28646345318688, 0],
+      "location": "302 TIONG BAHRU ROAD, TIONG BAHRU PLAZA, #3-19"
+    },
+    {
+      "coordinates": [103.845047580881, 1.30074770847155, 0],
+      "location": "68 ORCHARD ROAD, PLAZA SINGAPURA, #3-39"
+    },
+    {
+      "coordinates": [103.845047580881, 1.30074770847155, 0],
+      "location": "68 ORCHARD ROAD, PLAZA SINGAPURA, #1-36"
+    },
+    {
+      "coordinates": [103.739371389964, 1.33375343199036, 0],
+      "location": "135 JURONG GATEWAY ROAD"
+    },
+    {
+      "coordinates": [103.7467344968, 1.33489843717476, 0],
+      "location": "2 JURONG EAST STREET 21, IMM, #3-33"
+    },
+    {
+      "coordinates": [103.705351000578, 1.33931503396417, 0],
+      "location": "63 JURONG WEST CENTRAL 3, JURONG POINT, #B1-92"
+    },
+    {
+      "coordinates": [103.705351000578, 1.33931503396417, 0],
+      "location": "63 JURONG WEST CENTRAL 3, JURONG POINT, #03-01"
+    },
+    {
+      "coordinates": [103.70646088413, 1.3398301525794, 0],
+      "location": "1 JURONG WEST CENTRAL 2, JURONG POINT, #B1-94"
+    },
+    {
+      "coordinates": [103.857007341008, 1.29145525906521, 0],
+      "location": "6 RAFFLES BOULEVARD, MARINA SQUARE, #03 - 223 / 232"
+    },
+    {
+      "coordinates": [103.849834212162, 1.29114627294634, 0],
+      "location": "109 NORTH BRIDGE ROAD, FUNAN, #3-16"
+    },
+    {
+      "coordinates": [103.855411182582, 1.299112870967, 0],
+      "location": "200 VICTORIA STREET, BUGIS JUNCTION, #3-10E"
+    },
+    {
+      "coordinates": [103.83175791999, 1.29380234644511, 0],
+      "location": "1 KIM SENG PROMENADE, GREAT WORLD CITY, #07-01"
+    },
+    {
+      "coordinates": [103.905113592255, 1.30119130748691, 0],
+      "location": "80 MARINE PARADE ROAD, PARKWAY PARADE, #02-34"
+    },
+    {
+      "coordinates": [103.892724434212, 1.31752384126856, 0],
+      "location": "10 PAYA LEBAR ROAD, PAYA LEBAR QUARTER(PLQ), #4-01"
+    },
+    {
+      "coordinates": [103.905113592255, 1.30119130748691, 0],
+      "location": "80 MARINE PARADE RD, PARKWAY PARADE, #3-28"
+    },
+    {
+      "coordinates": [103.944458093925, 1.35480107846676, 0],
+      "location": "510 TAMPINES CENTRAL 1"
+    },
+    {
+      "coordinates": [103.944387987324, 1.35267231590699, 0],
+      "location": "4 TAMPINES CENTRAL 5, TAMPINES CENTRAL, #2-27"
+    },
+    {
+      "coordinates": [103.945019461564, 1.35431555986081, 0],
+      "location": "10 TAMPINES CENTRAL 1, TAMPINES 1, #4-25"
+    },
+    {
+      "coordinates": [103.945019461564, 1.35431555986081, 0],
+      "location": "10 TAMPINES CENTRAL 1, TAMPINES 1, #B1-09"
+    },
+    {
+      "coordinates": [103.738931802142, 1.3780561421762, 0],
+      "location": "475 CHOA CHU KANG AVENUE 3"
+    },
+    {
+      "coordinates": [103.744923812722, 1.38406515926541, 0],
+      "location": "2 CHOA CHU KANG LOOP, KEAT HONG CC"
+    },
+    {
+      "coordinates": [103.856421771906, 1.31130516479714, 0],
+      "location": "180 KITCHENER ROAD"
+    },
+    {
+      "coordinates": [103.894980032554, 1.39209415018227, 0],
+      "location": "1 SENGKANG SQUARE"
+    },
+    {
+      "coordinates": [103.786619621971, 1.43507788583776, 0],
+      "location": "900 SOUTH WOODLANDS DRIVE, WOODLANDS CIVIC CENTRE, #B1-01"
+    },
+    {
+      "coordinates": [103.795136736247, 1.43767919710846, 0],
+      "location": "BLK 888 WOODLANDS DR 50, #01-757"
+    },
+    {
+      "coordinates": [103.800573465174, 1.43977701137209, 0],
+      "location": "BLK 676 WOODLANDS DR 71, KAMPUND ADMIRALTY, #B1-02"
+    },
+    {
+      "coordinates": [103.774051203192, 1.43262603029887, 0],
+      "location": "71 WOODLANDS AVE 3, MARSLING MRT, #01-01"
+    },
+    {
+      "coordinates": [103.847082884002, 1.37140920643065, 0],
+      "location": "BLK 712 ANG MO KIO AVE 6, BLK 712 ANG MO KIO, #01-4056"
+    },
+    {
+      "coordinates": [103.849691988212, 1.34888843913816, 0],
+      "location": "BLK 510 BISHAN ST 13, #01-520"
+    },
+    {
+      "coordinates": [103.931478811435, 1.35132607390816, 0],
+      "location": "880 TAMPINES AVENUE 8, TAMPINES SPRING RN"
+    },
+    {
+      "coordinates": [103.949793334969, 1.34518427892421, 0],
+      "location": "124 TAMPINES STREET 11, TAMPINES CHANGKAT ZONE 5 RC"
+    },
+    {
+      "coordinates": [103.848083335838, 1.38034090667762, 0],
+      "location": "ANG MO KIO AVENUE 8, NANYANG POLYTECHNIC, BLOCK E (NORTH CANTEEN)"
+    },
+    {
+      "coordinates": [103.83091978573, 1.3546690188205, 0],
+      "location": "301 UPPER THOMSON ROAD, THOMSON PLAZA"
+    },
+    {
+      "coordinates": [103.771562462036, 1.3327625965271, 0],
+      "location": "535 CLEMENTI ROAD, NGEE ANN POLYCLINIC, BLK 22"
+    },
+    {
+      "coordinates": [103.813180045951, 1.31347941588508, 0],
+      "location": "1 CLUNY ROAD, NATIONAL PARKS BOARD HQ, SINGAPORE BOTANIC GARDENS"
+    },
+    {
+      "coordinates": [103.703415660179, 1.34878489184957, 0],
+      "location": "7 JURONG WEST AVE 5, #01-01"
+    },
+    {
+      "coordinates": [103.796846522878, 1.45074972447127, 0],
+      "location": "200 WOODLANDS INDUSTRIAL PARK E7, #01-30"
+    },
+    {
+      "coordinates": [103.798021748872, 1.30203801734289, 0],
+      "location": "BLK 88 TANGLIN HALT ROAD, #01-10"
+    },
+    {
+      "coordinates": [103.871996421774, 1.37563499622553, 0],
+      "location": "19 SERANGOON NORTH AVE 5, #01-01"
+    },
+    {
+      "coordinates": [103.725221540647, 1.32546807053288, 0],
+      "location": "3 YUAN CHING RD, #01-01A/02"
+    },
+    {
+      "coordinates": [103.773515660456, 1.43150526507051, 0],
+      "location": "BLK 301 WOODLANDS ST 31, #01-217"
+    },
+    {
+      "coordinates": [103.738292805557, 1.32213635836523, 0],
+      "location": "BLK 61 TEBAN GARDENS RD, #01-21"
+    },
+    {
+      "coordinates": [103.841580116173, 1.28708277772418, 0],
+      "location": "BLK 52 CHIN SWEE RD, #01-25"
+    },
+    {
+      "coordinates": [103.83610405607, 1.31056745258169, 0],
+      "location": "40 SCOTTS ROAD"
+    },
+    {
+      "coordinates": [103.91514355252, 1.33255277788544, 0],
+      "location": "180 BEDOK RESERVOIR ROAD"
+    },
+    {
+      "coordinates": [103.946602685067, 1.35736478775974, 0],
+      "location": "2 TAMPINES STREET 41"
+    },
+    {
+      "coordinates": [103.947687834643, 1.3458133461735, 0],
+      "location": "13 TAMPINES STREET 11"
+    },
+    {
+      "coordinates": [103.886092082636, 1.35779860505296, 0],
+      "location": "207 HOUGANG STREET 21"
+    },
+    {
+      "coordinates": [103.834676129269, 1.30242416552881, 0],
+      "location": "391A ORCHARD ROAD, NGEE ANN CITY TOWER A"
+    },
+    {
+      "coordinates": [103.760218442452, 1.38509602280679, 0],
+      "location": "BLK 628 SENJA RD, SENJA GRAND, #01-01"
+    },
+    {
+      "coordinates": [103.753118413925, 1.38003057945933, 0],
+      "location": "BLK 140 TECK WHYE LANE, #01-351"
+    },
+    {
+      "coordinates": [103.749334517405, 1.34871080233675, 0],
+      "location": "10 BUKIT BATOK CENTRAL, #01-08"
+    },
+    {
+      "coordinates": [103.731219147651, 1.34551209415107, 0],
+      "location": "BLK 345 JURONG EAST ST 31, #01-29"
+    },
+    {
+      "coordinates": [103.848430082687, 1.35017242685302, 0],
+      "location": "9 BISHAN PLACE, JUNCTION 8 SHOPPING CENTRE, #B1-01"
+    },
+    {
+      "coordinates": [103.763961852618, 1.38051732815914, 0],
+      "location": "NO. 1 JELEBU RD, BUKIT PANJANG PLAZA, #01-15 & #02-20"
+    },
+    {
+      "coordinates": [103.747329719197, 1.39712886014404, 0],
+      "location": "61 CHOA CHU KANG DR, YEW TEE MRT STATION, #01-01"
+    },
+    {
+      "coordinates": [103.764248205662, 1.31485321802259, 0],
+      "location": "3155 COMMONWEALTH AVENUE WEST, THE CLEMENTI MALL, #B1-12"
+    },
+    {
+      "coordinates": [103.865041855148, 1.36516070778275, 0],
+      "location": "1 MAJU AVE, SERANGOON GARDEN VILLAGE, #B1-11"
+    },
+    {
+      "coordinates": [103.778560470199, 1.33865676913061, 0],
+      "location": "NO. 1 JLN ANAK BUKIT, BUKIT TIMAH PLAZA, #B1-01 & #B2-01"
+    },
+    {
+      "coordinates": [103.83091978573, 1.3546690188205, 0],
+      "location": "301 UPPER THOMSON RD, THOMSON PLAZA, #03-37/38"
+    },
+    {
+      "coordinates": [103.876152670397, 1.30222177114752, 0],
+      "location": "5 STADIUM WALK, KALLANG LIESURE PARK, #B1-01"
+    },
+    {
+      "coordinates": [103.763750976116, 1.30246408379367, 0],
+      "location": "720  CLEMENTI WEST ST 2, #01-144"
+    },
+    {
+      "coordinates": [103.74394257144, 1.35303717544773, 0],
+      "location": "451 BUKIT BATOK WEST AVENUE 6, #01-10"
+    },
+    {
+      "coordinates": [103.887363067673, 1.32000040191606, 0],
+      "location": "118 ALJUNIED AVE 2, #01-100"
+    },
+    {
+      "coordinates": [103.931068835678, 1.32463572606471, 0],
+      "location": "209 NEW UPPER CHANGI RD, #01-631"
+    },
+    {
+      "coordinates": [103.873927617452, 1.37005486240283, 0],
+      "location": "10 SERANGOON NORTH AVENUE 2"
+    },
+    {
+      "coordinates": [103.841428124035, 1.38151727157775, 0],
+      "location": "50 ANG MO KIO STREET 61"
+    },
+    {
+      "coordinates": [103.853536076665, 1.36308867917974, 0],
+      "location": "ANG MO KIO AVENUE 10"
+    },
+    {
+      "coordinates": [103.83761242449, 1.37300749906274, 0],
+      "location": "ANG MO KIO AVENUE 4"
+    },
+    {
+      "coordinates": [103.840668130336, 1.36683348076669, 0],
+      "location": "ANG MO KIO AVENUE 1"
+    },
+    {
+      "coordinates": [103.793133806944, 1.33899462699318, 0],
+      "location": "200 TURF CLUB ROAD DBS THE GRANDSTAND, THE GRANDSTAND (TURF CITY)"
+    },
+    {
+      "coordinates": [103.846490874615, 1.32702990626384, 0],
+      "location": "AH HOOD ROAD, ZHONGSHAN MALL"
+    },
+    {
+      "coordinates": [103.950296247759, 1.36882713078143, 0],
+      "location": "565 PASIR RIS ST 51, REPAIR KOPITIAM"
+    },
+    {
+      "coordinates": [103.952816065919, 1.35001073882934, 0],
+      "location": "285 TAMPINES STREET 22, TAMPINES CHANGKAT ZONE 4 RC"
+    },
+    {
+      "coordinates": [103.959873499831, 1.35693800555856, 0],
+      "location": "364 TAMPINES STREET 34, TAMPINES CHANGKAT ZONE 8 RC"
+    },
+    {
+      "coordinates": [103.950148200773, 1.35955258017468, 0],
+      "location": "430 TAMPINES STREET 41, TAMPINES NORTH ZONE 3 RC"
+    },
+    {
+      "coordinates": [103.933499184206, 1.35670605826191, 0],
+      "location": "730 TAMPINES STREET 71, TAMPINES COURTVIEW RC"
+    },
+    {
+      "coordinates": [103.934383364035, 1.35904159378304, 0],
+      "location": "736 TAMPINES STREET 72, TAMPINES GREENVALE RC"
+    },
+    {
+      "coordinates": [103.935952394886, 1.35173850438617, 0],
+      "location": "842 TAMPINES STREET 82, TAMPINES VILLE RN"
+    },
+    {
+      "coordinates": [103.856411986641, 1.37789203173292, 0],
+      "location": "ANG MO KIO DRIVE, #A1-12"
+    },
+    {
+      "coordinates": [103.810031318703, 1.28112226404962, 0],
+      "location": "108 DEPOT ROAD, DEPOT HEIGHTS SHOPPING CENTRE"
+    },
+    {
+      "coordinates": [103.845155402476, 1.27672492300406, 0],
+      "location": "7 WALLICH STREET, GUOCO TOWER"
+    },
+    {
+      "coordinates": [103.749021980031, 1.35018915982967, 0],
+      "location": "1 BUKIT BATOK CENTRAL LINK, #3-01"
+    },
+    {
+      "coordinates": [103.763961852618, 1.38051732815914, 0],
+      "location": "1 JELEBU ROAD, #4-04 & 16/17"
+    },
+    {
+      "coordinates": [103.845580700883, 1.37479009534678, 0],
+      "location": "4300 ANG MO KIO AVENUE 6"
+    },
+    {
+      "coordinates": [103.931620621577, 1.32698498848449, 0],
+      "location": "11 BEDOK NORTH STREET 1, #2-03 & #3-04"
+    },
+    {
+      "coordinates": [103.848843026999, 1.34985304885287, 0],
+      "location": "5 BISHAN PLACE, #1-01"
+    },
+    {
+      "coordinates": [103.89366161203, 1.37231185642959, 0],
+      "location": "90 HOUGANG AVENUE, #3-11"
+    },
+    {
+      "coordinates": [103.744950384161, 1.38506835667563, 0],
+      "location": "21 CHOA CHU KANG AVE 4, #4-01/02"
+    },
+    {
+      "coordinates": [103.764248205662, 1.31485321802259, 0],
+      "location": "3155 COMMONWEALTH AVENUE WEST, #5-13/14/15"
+    },
+    {
+      "coordinates": [103.885837275913, 1.3174429839463, 0],
+      "location": "50 GEYLANG EAST AVE 1"
+    },
+    {
+      "coordinates": [103.739490178697, 1.33288484168537, 0],
+      "location": "21 JURONG EAST CENTRAL 1"
+    },
+    {
+      "coordinates": [103.704452685304, 1.34046956412475, 0],
+      "location": "60 JURONG WEST CENTRAL 3, #1-03"
+    },
+    {
+      "coordinates": [103.9095452826, 1.30482859822658, 0],
+      "location": "278 MARINE PARADE ROAD, #1-02"
+    },
+    {
+      "coordinates": [103.853942302347, 1.297489753102, 0],
+      "location": "100 VICTORIA STREET"
+    },
+    {
+      "coordinates": [103.939683594446, 1.35349615471813, 0],
+      "location": "1 TAMPINES WALK, #2-01"
+    },
+    {
+      "coordinates": [103.85049180316, 1.33352076184374, 0],
+      "location": "6 TOA PAYOH CENTRAL"
+    },
+    {
+      "coordinates": [103.805430802302, 1.29864021099395, 0],
+      "location": "53 MARGARET DRIVE"
+    },
+    {
+      "coordinates": [103.786619621971, 1.43507788583776, 0],
+      "location": "900 SOUTH WOODLANDS DRIVE, #1-03"
+    },
+    {
+      "coordinates": [103.835776496688, 1.42969847969486, 0],
+      "location": "930 YISHUN AVE 2, #4-01"
+    },
+    {
+      "coordinates": [103.894980032554, 1.39209415018227, 0],
+      "location": "1 SENGKANG SQUARE & COMPASS ONE, #3-28 / #4-19"
+    },
+    {
+      "coordinates": [103.87170454945, 1.35043817177432, 0],
+      "location": "23 SERANGOON CENTRAL, #4-82/83"
+    },
+    {
+      "coordinates": [103.819462104528, 1.44822653184262, 0],
+      "location": "30 SEMBAWANG DRIVE, #5-01"
+    },
+    {
+      "coordinates": [103.855665762299, 1.2895095530213, 0],
+      "location": "8 RAFFLES AVENUE, #3-01"
+    }
+  ]
+}

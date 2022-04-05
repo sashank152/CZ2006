@@ -4,6 +4,7 @@ import 'package:trashtogether/Screens/Calculator.dart';
 import 'package:trashtogether/Screens/ProfileScreen.dart';
 import 'package:trashtogether/Screens/SelectionScreen.dart';
 import 'package:trashtogether/models/Place.dart';
+import 'package:trashtogether/utils/cashfortrash.dart';
 import 'package:trashtogether/utils/colors.dart';
 import 'package:trashtogether/utils/data.dart';
 import 'package:trashtogether/widgets/MapWidget.dart';
@@ -57,6 +58,7 @@ class _MainScreenState extends State<MainScreen> {
     getPermission();
     pageController = PageController();
     _getCurrentLocation();
+    initData();
   }
 
   @override
