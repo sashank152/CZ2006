@@ -82,10 +82,24 @@ class AuthMethods {
 
   Future<String> loginUser(
       {required String email, required String password}) async {
-    String res = "Email or password cannot be empty";
+    String res = "User does not exist! Please re enter proper credentials";
+    String formatter = email.split('@')[0];
+    if (formatter.contains('.') ||
+        formatter.contains('@') ||
+        formatter.contains(',') ||
+        formatter.contains('/') ||
+        formatter.contains('\'') ||
+        formatter.contains(';')) {
+      res = "Invalid Email";
+      return res;
+    }
 
     try {
       if (email.isNotEmpty && password.isNotEmpty) {
+        if (password.length > 16 || password.length < 6) {
+          res = "Password must be between 6-16 characters";
+          return res;
+        }
         await _auth.signInWithEmailAndPassword(
             email: email, password: password);
         res = "Success";
