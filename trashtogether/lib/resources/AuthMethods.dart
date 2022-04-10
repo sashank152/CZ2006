@@ -25,7 +25,7 @@ class AuthMethods {
           username.isNotEmpty &&
           file != null) {
         //register user
-        if (password.length >= 16 || password.length <= 6) {
+        if (password.length >= 16 || password.length < 6) {
           res = "Password must be between 6-16 characters";
           return res;
         }

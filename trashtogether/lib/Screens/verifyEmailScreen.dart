@@ -48,7 +48,9 @@ class _verifyEmailScreenState extends State<verifyEmailScreen> {
     return Scaffold(
       body: Center(
           child: Text(
-              'An email has been sent to ${auth.currentUser!.email} please verify')),
+        'An email has been sent to ${auth.currentUser!.email} please verify',
+        textAlign: TextAlign.center,
+      )),
     );
   }
 

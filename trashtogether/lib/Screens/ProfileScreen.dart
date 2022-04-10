@@ -61,6 +61,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       showSnackBar(res, context);
     } else {
       showSnackBar("Successfully Signed Out", context);
+      Navigator.of(context).pop();
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => LoginScreen()));
     }

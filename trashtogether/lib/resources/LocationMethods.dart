@@ -12,6 +12,7 @@ class LocationMethods {
 
   double calculateDistance(
       double curlat, double curlong, double destlat, double destlong) {
-    return Geolocator.distanceBetween(curlat, curlong, destlong, destlat);
+    return Geolocator.distanceBetween(curlat, curlong, destlat, destlong) /
+        1000;
   }
 }

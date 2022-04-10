@@ -131,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             bottom: MediaQuery.of(context).size.height * .05),
                       ),
                       GestureDetector(
-                        onTap: () => Navigator.of(context).push(
+                        onTap: () => Navigator.of(context).pushReplacement(
                             MaterialPageRoute(
                                 builder: (context) => const SignupScreen())),
                         child: Container(
